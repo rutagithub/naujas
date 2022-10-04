@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0 užduotis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Poetry Workshops</h1>
+
+  <p>We will be conducting a number of poetry workshops and symposiums throughout the year</p>
+
+  <p>Please note that the following events are free to members:</p>
+
+  <div>
+    <ul>
+      <li>A Poetic Perspective</li>
+      <li>Walt Whitman at War</li>
+      <li>Found Poems and Outsider Poetry</li>
+    </ul>
+  </div>
+
+  <div>
+    <table>
+      <tr>
+        <th></th>
+        <th>New York</th>
+        <th>Chicago</th>
+        <th>San Francisco</th>
+      </tr>
+      <tr>
+        <td>A Poetic Perspective</td>
+        <td>Sat, 4 Feb 2012 11am-2pm</td>
+        <td>Sat, 3 Mar 2012 11am-2pm</td>
+        <td>Sat, 17 Mar 2012 11am-2pm</td>
+      </tr>
+      <tr>
+        <td>Walt Whitman at War</td>
+        <td>Sat, 7 Feb 2012 11am-1pm</td>
+        <td>Sat, 5 Feb 2012 11am-1pm</td>
+        <td>Sat, 19 Feb 2012 11am-1pm</td>
+      </tr>
+      <tr>
+        <td>Found Poems and Outsider Poetry</td>
+        <td>Sat, 7 Feb 2012 11am-1pm</td>
+        <td>Sat, 5 Feb 2012 11am-1pm</td>
+        <td>Sat, 19 Feb 2012 11am-1pm</td>
+      </tr>
+      <tr>
+        <td>Natural Death: An Exploration</td>
+        <td>Sat, 4 Feb 2012 11am-4pm</td>
+        <td>Sat, 8 Feb 2012 11am-4pm</td>
+        <td>Sat, 15 Feb 2012 11am-4pm</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="form">
+    <form action="index.html">
+      <fieldset>
+        <legend>Register your interest</legend>
+        <div>
+          <label for="firstname">Your name:</label>
+          <input type="text" id="firstname" name="firstname">
+        </div>
+
+        <div>
+          <label for="email">Your email:</label>
+          <input type="text" id="email" name="email">
+        </div>
+
+        <div>
+          <label for="">Your closest center:</label>
+          <select name="cities" class="classic">
+            <option value="newyork">New York</option>
+            <option value="chicago">Chicago</option>
+            <option value="sanfrancisco">San Francisco</option>
+          </select>
+        </div>
+
+        <div class="yesno">
+            <label>Are you a member?</label>
+            <div>
+            <input type="radio" id="yes" name="membership" value="yes">
+            <span>Yes</span>
+          </div>
+          <div class="last">
+            <input type="radio" id="no" name="membership" value="no">
+            <span>No</span>
+          </div>
+        </div>
+
+      </fieldset>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+
+</html>

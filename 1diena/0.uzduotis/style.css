@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* my code */
+body {
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Main */
+
+
+h1 {
+  margin: 15px 0 20px 10px; 
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  margin: 15px 0 20px 10px; 
+}
+
+/* List */
+
+ul {
+  list-style-type: none;
+  padding-left: 4rem;
+  margin: 0 0 20px 10px;
+}
+
+ul li {
+  background-image: url(images/plus_icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 1.2rem 1.2rem;
+  padding-left: 2rem;
+  margin: 5px;
+}
+
+/* Table */
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 0 20px 10px;
+}
+
+th {
+  background-color: #85a3e0;
+  color: white;
+  border-radius: 20px;
+}
+
+td {
+  padding: 15px;
+}
+
+table tr:nth-child(even) {
+  background-color: #d6e0f5;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ebf0fa;
+}
+
+/* Form */
+
+fieldset {
+  border: 1px solid black;
+  margin: 0 0 20px 10px;
+  width: 30%;
+}
+
+legend {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+fieldset>div {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+fieldset>div input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 50%;
+}
+
+fieldset>div select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 50%;
+}
+
+fieldset>div input[type="radio"] {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 50%;
+}
+
+.yesno>div {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  margin-left: 50%;
+}
+
+.yesno>div span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 54%;
+}
+
+.yesno .last input {
+  margin-left: 70%;
+}
+
+.yesno>div:last-child span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 74%;
+}
+
+input[type="submit"] {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  margin-left: 300px;
+}
