@@ -1,6 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* my code */
+
 body {
   background: url(images/pexels-pixabay-459654.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .8);
 }
 
+body::after {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 13%;
+  padding-bottom: 15%;
+}
+
+/* text */
+
+.text-box {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+  margin-top: 4%;
+}
+
+.text-box>h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-left: 100px;
+  margin-right: 30px;
+}
+
+.text-box>p {
+  font-size: 18px;
+  color: rgb(97, 96, 96);
+  line-height: 1.6;
+  margin-left: 100px;
+  margin-right: 30px;
+
+}
+
+/* form */
+form {
+  margin: auto;
+}
+
+.form {
+  display: inline-block;
+  width: 30%;
+  margin-left: 30px;
+}
+
+.form>p {
+  font-size: 18px;
+  color: rgb(97, 96, 96);
+  line-height: 1.6;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: rgb(238, 140, 59);
+  width: 84%;
+  color: white;
+  font-size: 16px;
+}
+
+textarea {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%;
+}
+
+textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
