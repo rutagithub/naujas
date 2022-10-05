@@ -1,0 +1,124 @@
+// header
+
+header {
+  background: url('../../../../3diena/mogo-projektas/images/home_background_image.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+// navigation 
+
+nav {
+
+  .logo,
+  .navbar,
+  li {
+    display: inline-block;
+  }
+
+  h3 {
+    font-weight: bold;
+    color: $textwhite;
+
+  }
+
+  li {
+    font-size: 14px;
+    font-family: $montserrat;
+    margin: 40px 27px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $textwhite;
+  }
+
+  li .active a,
+  li a:hover {
+    color: $textyellow;
+    border-bottom: 2px solid $textyellow;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// content 
+
+.content {
+  h2 {
+    font-family: $kaushan;
+    margin-top: 120px;
+    margin-bottom: 23px;
+  }
+
+  h1 {
+    padding: 0 50px 50px 50px;
+  }
+
+  button {
+    border: 2px solid $textwhite;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: $montserrat;
+    padding: 12px 29px;
+    margin-top: 50px;
+
+    a {
+      text-decoration: none;
+      color: $textwhite;
+    }
+  }
+
+  color: $textwhite;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+// bottom part
+
+.main-bottom {
+  h4 {
+    font-family: $montserrat;
+    font-weight: bold;
+    display: inline;
+  }
+
+  p {
+    font-family: $montserrat;
+    font-size: $ssmaller;
+    display: inline;
+  }
+
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  // border: 1px solid red;
+}
+
+.intro,
+.work,
+.about,
+.contacts {
+
+  display: inline-block;
+}
+
+.intro {
+  color: $textwhite;
+}
+
+.work,
+.about,
+.contacts {
+  color: $lightyellow;
+}
+
+
+// for screens less than 1200px

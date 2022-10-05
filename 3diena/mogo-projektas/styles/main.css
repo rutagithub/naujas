@@ -1,0 +1,278 @@
+body {
+  font-size: 0;
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 150px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 72px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.grey-line {
+  width: 60px;
+  background-color: #ffffff;
+  height: 3px;
+  margin: 0 auto;
+}
+
+.red-line {
+  width: 60px;
+  background-color: #f38181;
+  height: 3px;
+  margin: 0 auto;
+}
+
+.long-line {
+  width: 280px;
+  background-color: #f7ebc5;
+  height: 3px;
+}
+
+header {
+  background: url("../../../../3diena/mogo-projektas/images/home_background_image.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav .logo,
+nav .navbar,
+nav li {
+  display: inline-block;
+}
+nav h3 {
+  font-weight: bold;
+  color: #ffffff;
+}
+nav li {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin: 40px 27px;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav li .active a,
+nav li a:hover {
+  color: #fce38a;
+  border-bottom: 2px solid #fce38a;
+}
+nav .logo {
+  width: 40%;
+}
+
+.content {
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content h2 {
+  font-family: "Kaushan Script", cursive;
+  margin-top: 120px;
+  margin-bottom: 23px;
+}
+.content h1 {
+  padding: 0 50px 50px 50px;
+}
+.content button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  padding: 12px 29px;
+  margin-top: 50px;
+}
+.content button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-bottom h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  display: inline;
+}
+.main-bottom p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  display: inline;
+}
+
+.intro,
+.work,
+.about,
+.contacts {
+  display: inline-block;
+}
+
+.intro {
+  color: #ffffff;
+}
+
+.work,
+.about,
+.contacts {
+  color: #f7ebc5;
+}/*# sourceMappingURL=main.css.map */
