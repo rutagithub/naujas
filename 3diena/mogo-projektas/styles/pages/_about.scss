@@ -1,0 +1,45 @@
+#about {
+  background-color: $textwhite;
+  margin: 90px 0 110px 0;
+
+  .image-row {
+    img {
+      margin: 0 7px;
+      height: 250px;
+    }
+
+    img[alt="superteam"] {
+      height: 260px;
+    }
+  }
+}
+
+.statistics {
+  background: url('../../../3diena/mogo-projektas/images/blue_line.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .stat-info {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    padding: 80px 0;
+    color: $textwhite;
+    font-family: $montserrat;
+    border-left: 1px solid $lightmint;
+
+    p {
+      text-transform: uppercase;
+      font-size: $small;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+  }
+
+  .stat-info:last-child {
+    border-right: 1px solid $lightmint;
+  }
+}

@@ -1,0 +1,42 @@
+// map 
+
+.map {
+  background: url('../../../../3diena/mogo-projektas/images/background_line.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .map-link {
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 56px;
+
+    h4 {
+      color: $salmon;
+      font-family: $montserrat;
+      font-weight: bold;
+      margin-bottom: 22px;
+
+    }
+
+    img {
+      margin-bottom: 18px;
+
+    }
+  }
+}
+
+// footer contacts part
+
+#contacts {
+  .contacts,
+  .blogs,
+  .instagram {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .copyright {
+    border-top: 1px solid $textgrey;
+    margin-top: 95px;
+  }
+}

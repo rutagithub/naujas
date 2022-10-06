@@ -17,5 +17,14 @@ h3 {
 
 h4 {
   font-size: $smaller;
-  // font-family: $kaushan;
+}
+
+h5 {
+  font-size: $extrasmall;
+}
+
+// nepamiršti apkeisti su h5 ir pakeisti visur failuose
+
+h6 {
+  font-size: $ml;
 }

@@ -1,0 +1,43 @@
+// sections layout
+
+.section {
+  margin: 110px 0;
+}
+
+.container {
+  max-width: 1200px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+
+  h4,
+  h3 {
+    color: $textblack;
+  }
+
+  h4 {
+    font-family: $kaushan;
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-family: $montserrat;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  p {
+    color: $textgrey;
+    font-size: $small;
+    margin-bottom: 90px;
+    padding: 0 130px;
+    font-family: $roboto;
+  }
+
+  .red-line {
+    margin-bottom: 45px;
+  }
+}

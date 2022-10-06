@@ -1,0 +1,38 @@
+#works {
+  .works-pictures {
+    margin: 0;
+    padding: 0;
+
+    img {
+      max-width: 470px;
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+}
+
+// review section two
+
+// nucopint koda is service page scss, review section one
+
+// clients section 
+
+.client-section {
+  background: url('../../../../3diena/mogo-projektas/images/background_3.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 110px;
+
+  .client-reviews {
+    border: 1px solid red;
+    margin-bottom: 110px;
+
+    .client-row {
+      .client {
+        display: inline-block;
+        width: 45%;
+
+      }
+    }
+  }
+}

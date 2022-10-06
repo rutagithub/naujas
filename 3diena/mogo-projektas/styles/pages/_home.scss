@@ -68,6 +68,7 @@ nav {
     font-family: $montserrat;
     padding: 12px 29px;
     margin-top: 50px;
+    margin-bottom: 120px;
 
     a {
       text-decoration: none;
@@ -79,46 +80,51 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-}
 
-// bottom part
+  // bottom part
 
-.main-bottom {
-  h4 {
-    font-family: $montserrat;
-    font-weight: bold;
-    display: inline;
+  .main-bottom {
+    h4 {
+      font-family: $montserrat;
+      font-weight: bold;
+      display: inline;
+    }
+
+    span {
+      font-family: $montserrat;
+      font-size: $ssmaller;
+      font-weight: lighter;
+    }
+
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  p {
-    font-family: $montserrat;
-    font-size: $ssmaller;
-    display: inline;
+  .intro,
+  .work,
+  .about,
+  .contacts {
+    display: inline-block;
+    margin: 0 8px 25px 8px;
+
+    div {
+      margin-bottom: 25px;
+    }
   }
 
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  // border: 1px solid red;
+  .intro {
+    color: $textwhite;
+  }
+
+  .work,
+  .about,
+  .contacts {
+    color: $lightyellow;
+  }
+
 }
 
-.intro,
-.work,
-.about,
-.contacts {
 
-  display: inline-block;
-}
-
-.intro {
-  color: $textwhite;
-}
-
-.work,
-.about,
-.contacts {
-  color: $lightyellow;
-}
 
 
 // for screens less than 1200px

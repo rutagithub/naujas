@@ -1,6 +1,6 @@
 body {
   font-size: 0;
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -159,6 +159,51 @@ h4 {
   font-size: 24px;
 }
 
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 46px;
+}
+
+.section {
+  margin: 110px 0;
+}
+
+.container {
+  max-width: 1200px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+.title h4,
+.title h3 {
+  color: #333333;
+}
+.title h4 {
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 25px;
+}
+.title h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.title p {
+  color: #999999;
+  font-size: 15px;
+  margin-bottom: 90px;
+  padding: 0 130px;
+  font-family: "Roboto", sans-serif;
+}
+.title .red-line {
+  margin-bottom: 45px;
+}
+
 .grey-line {
   width: 60px;
   background-color: #ffffff;
@@ -177,6 +222,12 @@ h4 {
   width: 280px;
   background-color: #f7ebc5;
   height: 3px;
+}
+
+.red-white-line {
+  width: 280px;
+  height: 3px;
+  background-color: #f38181;
 }
 
 header {
@@ -238,41 +289,296 @@ nav .logo {
   font-family: "Montserrat", sans-serif;
   padding: 12px 29px;
   margin-top: 50px;
+  margin-bottom: 120px;
 }
 .content button a {
   text-decoration: none;
   color: #ffffff;
 }
-
-.main-bottom {
+.content .main-bottom {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
 }
-.main-bottom h4 {
+.content .main-bottom h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   display: inline;
 }
-.main-bottom p {
+.content .main-bottom span {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  display: inline;
+  font-weight: lighter;
 }
-
-.intro,
-.work,
-.about,
-.contacts {
+.content .intro,
+.content .work,
+.content .about,
+.content .contacts {
   display: inline-block;
+  margin: 0 8px 25px 8px;
 }
-
-.intro {
+.content .intro div,
+.content .work div,
+.content .about div,
+.content .contacts div {
+  margin-bottom: 25px;
+}
+.content .intro {
   color: #ffffff;
 }
-
-.work,
-.about,
-.contacts {
+.content .work,
+.content .about,
+.content .contacts {
   color: #f7ebc5;
+}
+
+#blog .blog-row {
+  width: 100%;
+}
+#blog .blog-row .article {
+  display: inline-block;
+  width: 33%;
+}
+#blog .blog-row .article img {
+  height: 240px;
+}
+
+#works .works-pictures {
+  margin: 0;
+  padding: 0;
+}
+#works .works-pictures img {
+  max-width: 470px;
+  width: 100%;
+  vertical-align: top;
+}
+
+.client-section {
+  background: url("../../../../3diena/mogo-projektas/images/background_3.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 110px;
+}
+.client-section .client-reviews {
+  border: 1px solid red;
+  margin-bottom: 110px;
+}
+.client-section .client-reviews .client-row .client {
+  display: inline-block;
+  width: 45%;
+}
+
+.map {
+  background: url("../../../../3diena/mogo-projektas/images/background_line.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.map .map-link {
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+.map .map-link h4 {
+  color: #f38181;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+.map .map-link img {
+  margin-bottom: 18px;
+}
+
+#contacts .contacts,
+#contacts .blogs,
+#contacts .instagram {
+  display: inline-block;
+  width: 30%;
+}
+#contacts .copyright {
+  border-top: 1px solid #999999;
+  margin-top: 95px;
+}
+
+#service .services {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto;
+}
+#service .services .service-item {
+  display: inline-block;
+  width: 31%;
+  padding: 50px 10px 50px 10px;
+}
+#service .services .service-item .service-icon {
+  display: inline-block;
+  vertical-align: top;
+}
+#service .services .service-item .service-text {
+  display: inline-block;
+  width: 78%;
+  padding: 0 20px;
+}
+#service .services .service-item .service-text h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  padding-bottom: 20px;
+}
+#service .services .service-item .service-text p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+#service .services:last-child {
+  border: none;
+}
+
+.devices {
+  background: url("../../../../3diena/mogo-projektas/images/another_background.png") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 905px;
+}
+.devices .title {
+  padding-top: 100px;
+}
+
+.what-we-do .activity-section h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  padding-bottom: 20px;
+  display: inline;
+}
+.what-we-do .activity-section p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 15px;
+  display: inline;
+  width: 50%;
+}
+.what-we-do .activity-section .picture {
+  display: inline-block;
+  width: 45%;
+  margin-right: 30px;
+}
+.what-we-do .activity-section .picture img {
+  width: 100%;
+}
+.what-we-do .activity-section .activity {
+  display: inline-block;
+  width: 52%;
+  vertical-align: top;
+}
+.what-we-do .activity-section .activity-item {
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+}
+.what-we-do .activity-section .activity-item .activity-text,
+.what-we-do .activity-section .activity-item .activity-icon {
+  display: inline-block;
+}
+.what-we-do .activity-section .activity-item .activity-text {
+  width: 85%;
+  vertical-align: top;
+}
+.what-we-do .activity-section .activity-item .activity-icon {
+  width: 5%;
+}
+
+.reviews-section-one {
+  background: url("../../../../3diena/mogo-projektas/images/grey-line.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews-section-one .review-items {
+  border: 1px solid red;
+}
+.reviews-section-one .review-items .review-item-icon,
+.reviews-section-one .review-items .review-item-text,
+.reviews-section-one .review-items .review-item-picture {
+  display: inline-block;
+}
+.reviews-section-one .review-items .review-item-icon {
+  width: 5%;
+}
+.reviews-section-one .review-items .review-item-picture {
+  width: 20%;
+}
+.reviews-section-one .review-items .review-item-text {
+  width: 60%;
+}
+.reviews-section-one .review-items .review-item-text p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+}
+.reviews-section-one .review-items .review-item-text h4 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.team .team-row {
+  text-align: center;
+}
+.team .team-row .team-member {
+  display: inline-block;
+  width: 31%;
+  padding-right: 15px;
+}
+.team .team-row .team-member img {
+  width: 100%;
+}
+.team .team-row .team-member h5 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.team .team-row .team-member p {
+  color: #999999;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  background: url("../../../../3diena/mogo-projektas/images/grey-line.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo .logo-image img {
+  width: 100%;
+}
+
+#about {
+  background-color: #ffffff;
+  margin: 90px 0 110px 0;
+}
+#about .image-row img {
+  margin: 0 7px;
+  height: 250px;
+}
+#about .image-row img[alt=superteam] {
+  height: 260px;
+}
+
+.statistics {
+  background: url("../../../3diena/mogo-projektas/images/blue_line.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.statistics .stat-info {
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  padding: 80px 0;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  border-left: 1px solid #b5eae0;
+}
+.statistics .stat-info p {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.statistics .stat-info h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.statistics .stat-info:last-child {
+  border-right: 1px solid #b5eae0;
 }/*# sourceMappingURL=main.css.map */

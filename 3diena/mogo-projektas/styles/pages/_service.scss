@@ -1,0 +1,209 @@
+// service section
+
+#service {
+  .services {
+    border-bottom: 1px solid $lightgrey;
+    margin: 0 auto;
+
+    .service-item {
+      // border: 1px solid red;
+      display: inline-block;
+      width: 31%;
+      padding: 50px 10px 50px 10px;
+
+      .service-icon {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .service-text {
+        display: inline-block;
+        width: 78%;
+        padding: 0 20px;
+
+        h5 {
+          font-family: $montserrat;
+          color: $textblack;
+          padding-bottom: 20px;
+        }
+
+        p {
+          font-family: $roboto;
+          color: $textgrey;
+        }
+      }
+    }
+  }
+
+  .services:last-child {
+    border: none;
+  }
+}
+
+
+// devices section
+
+.devices {
+  background: url('../../../../3diena/mogo-projektas/images/another_background.png') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 905px;
+
+  .title {
+    padding-top: 100px;
+  }
+}
+
+// what we do section
+
+.what-we-do {
+  .activity-section {
+    // border: 1px solid red;
+
+    h5 {
+      font-family: $montserrat;
+      color: $textblack;
+      padding-bottom: 20px;
+      display: inline;
+    }
+
+    p {
+      font-family: $roboto;
+      color: $textgrey;
+      font-style: italic;
+      line-height: 1.6;
+      font-size: $small;
+      display: inline;
+      width: 50%;
+    }
+
+    .picture {
+      display: inline-block;
+      width: 45%;
+      margin-right: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .activity {
+      display: inline-block;
+      width: 52%;
+      vertical-align: top;
+    }
+
+    .activity-item {
+      border: 1px solid $lightgrey;
+      padding: 15px;
+
+      .activity-text,
+      .activity-icon {
+        display: inline-block;
+        // border: 1px solid red;
+      }
+
+      .activity-text {
+        width: 85%;
+        vertical-align: top;
+      }
+
+      .activity-icon {
+        width: 5%;
+        // padding: 15px;
+      }
+
+    }
+  }
+}
+
+// reviews section 1
+
+.reviews-section-one {
+  background: url('../../../../3diena/mogo-projektas/images/grey-line.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .review-items {
+    // 
+    border: 1px solid red;
+
+    .review-item-icon,
+    .review-item-text,
+    .review-item-picture {
+      display: inline-block;
+
+    }
+
+    .review-item-icon {
+      width: 5%;
+    }
+
+    .review-item-picture {
+      width: 20%;
+    }
+
+    .review-item-text {
+      p {
+        font-family: $roboto;
+        color: $textgrey;
+        font-style: italic;
+        line-height: 1.6;
+      }
+
+      h4 {
+        font-family: $kaushan;
+      }
+
+      width: 60%;
+    }
+  }
+
+
+}
+
+// team section 
+
+.team {
+  .team-row {
+    text-align: center;
+
+    .team-member {
+      display: inline-block;
+      width: 31%;
+      padding-right: 15px;
+
+      img {
+        width: 100%;
+      }
+
+      h5 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: $textgrey;
+        font-style: italic;
+        font-family: $roboto;
+      }
+    }
+  }
+}
+
+// logo section
+
+.logo {
+  background: url('../../../../3diena/mogo-projektas/images/grey-line.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .logo-image {
+
+    // border: 1px solid red;
+    img {
+      width: 100%;
+      // margin: 30px 0;
+    }
+  }
+}
