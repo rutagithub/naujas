@@ -6,10 +6,9 @@
     margin: 0 auto;
 
     .service-item {
-      // border: 1px solid red;
       display: inline-block;
       width: 31%;
-      padding: 50px 10px 50px 10px;
+      padding: 50px 15px 50px 10px;
 
       .service-icon {
         display: inline-block;
@@ -30,6 +29,7 @@
         p {
           font-family: $roboto;
           color: $textgrey;
+          line-height: 1.6;
         }
       }
     }
@@ -39,7 +39,6 @@
     border: none;
   }
 }
-
 
 // devices section
 
@@ -58,29 +57,11 @@
 
 .what-we-do {
   .activity-section {
-    // border: 1px solid red;
-
-    h5 {
-      font-family: $montserrat;
-      color: $textblack;
-      padding-bottom: 20px;
-      display: inline;
-    }
-
-    p {
-      font-family: $roboto;
-      color: $textgrey;
-      font-style: italic;
-      line-height: 1.6;
-      font-size: $small;
-      display: inline;
-      width: 50%;
-    }
 
     .picture {
       display: inline-block;
-      width: 45%;
-      margin-right: 30px;
+      width: 47%;
+      padding-right: 30px;
 
       img {
         width: 100%;
@@ -89,30 +70,59 @@
 
     .activity {
       display: inline-block;
-      width: 52%;
-      vertical-align: top;
+      width: 48%;
     }
 
     .activity-item {
       border: 1px solid $lightgrey;
       padding: 15px;
+      vertical-align: top;
 
       .activity-text,
       .activity-icon {
         display: inline-block;
-        // border: 1px solid red;
       }
 
       .activity-text {
         width: 85%;
         vertical-align: top;
+        padding: 10px 0 0 10px;
+
+        h5 {
+          font-family: $montserrat;
+          color: $textblack;
+          padding-bottom: 20px;
+          display: inline;
+        }
+
+        p {
+          font-family: $roboto;
+          color: $textgrey;
+          font-style: italic;
+          line-height: 1.6;
+          font-size: $small;
+          display: inline;
+          width: 50%;
+        }
       }
 
       .activity-icon {
         width: 5%;
-        // padding: 15px;
+        vertical-align: middle;
       }
+    }
 
+    .activity-item:nth-child(2) {
+      margin-bottom: 10px;
+
+      .activity-text {
+        width: 90%;
+        padding-right: 11px;
+      }
+    }
+
+    .activity-item:nth-child(3) {
+      margin-bottom: 10px
     }
   }
 }
@@ -125,41 +135,58 @@
   background-size: cover;
 
   .review-items {
-    // 
-    border: 1px solid red;
+    padding: 70px 20px;
 
     .review-item-icon,
     .review-item-text,
     .review-item-picture {
       display: inline-block;
-
+      vertical-align: middle;
     }
 
     .review-item-icon {
-      width: 5%;
+      width: 3%;
+    }
+
+    .review-item-icon:last-child {
+      text-align: right;
     }
 
     .review-item-picture {
-      width: 20%;
+      width: 13%;
+      padding-left: 55px;
+
+      img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+      }
     }
 
     .review-item-text {
+      padding: 0 55px;
+      width: 65%;
+
       p {
         font-family: $roboto;
         color: $textgrey;
         font-style: italic;
         line-height: 1.6;
+        font-size: $smaller;
+        margin-bottom: 15px;
+      }
+
+      .red-line {
+        display: inline-block;
+        margin-right: 5px;
       }
 
       h4 {
         font-family: $kaushan;
+        display: inline-block;
       }
-
-      width: 60%;
     }
   }
-
-
 }
 
 // team section 
@@ -178,8 +205,7 @@
       }
 
       h5 {
-        margin-top: 30px;
-        margin-bottom: 15px;
+        margin: 30px 0 15px 0;
       }
 
       p {
@@ -193,17 +219,15 @@
 
 // logo section
 
-.logo {
+.logos {
   background: url('../../../../3diena/mogo-projektas/images/grey-line.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
 
   .logo-image {
 
-    // border: 1px solid red;
     img {
       width: 100%;
-      // margin: 30px 0;
     }
   }
 }

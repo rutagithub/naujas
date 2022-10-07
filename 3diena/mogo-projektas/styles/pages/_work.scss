@@ -4,16 +4,68 @@
     padding: 0;
 
     img {
-      max-width: 470px;
       width: 100%;
-      vertical-align: top;
     }
   }
 }
 
 // review section two
+// reviews kartojasi, galima i main content perkelti koda
+.review-section-two {
 
-// nucopint koda is service page scss, review section one
+
+  .review-items {
+    margin: 0 20px;
+
+    .review-item-icon,
+    .review-item-text,
+    .review-item-picture {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .review-item-icon {
+      width: 4%;
+    }
+
+    .review-item-icon:last-child {
+      text-align: right;
+    }
+
+    .review-item-picture {
+      width: 20%;
+
+      img {
+        width: 100%;
+        max-width: 210px;
+      }
+    }
+
+    .review-item-text {
+      p {
+        font-family: $roboto;
+        color: $textgrey;
+        font-style: italic;
+        line-height: 1.6;
+        font-size: $smaller;
+        margin-bottom: 15px;
+      }
+
+      .red-line {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      h4 {
+        font-family: $kaushan;
+        display: inline-block;
+      }
+
+      width: 70%;
+    }
+  }
+}
+
 
 // clients section 
 
@@ -24,14 +76,61 @@
   padding-top: 110px;
 
   .client-reviews {
-    border: 1px solid red;
-    margin-bottom: 110px;
+    padding-bottom: 30px;
+    margin-top: 90px;
 
     .client-row {
+      margin-bottom: 80px;
+      width: 100%;
+
       .client {
         display: inline-block;
-        width: 45%;
+        width: 47%;
+        margin: 0 auto;
+        padding: 0 15px;
 
+        .client-image {
+          display: inline-block;
+          width: 25%;
+          vertical-align: top;
+          padding-left: 15px;
+
+          img {
+            width: 100%;
+            max-width: 110px;
+          }
+        }
+
+        .client-info {
+          display: inline-block;
+          width: 70%;
+
+          h5 {
+            font-family: $montserrat;
+            margin-bottom: 15px;
+            color: $textblack;
+          }
+
+          p {
+            font-family: $roboto;
+            margin-bottom: 15px;
+            font-size: $small;
+            color: $textblack;
+          }
+
+          i {
+            font-style: italic;
+          }
+
+          .red-line {
+            margin-bottom: 25px;
+          }
+        }
+
+        .client-info p:last-child {
+          color: $textgrey;
+          line-height: 1.6;
+        }
       }
     }
   }

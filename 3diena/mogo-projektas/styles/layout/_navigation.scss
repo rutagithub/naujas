@@ -1,0 +1,40 @@
+// navigation 
+
+nav {
+
+  .logo,
+  .navbar,
+  li {
+    display: inline-block;
+  }
+
+  h3 {
+    font-weight: bold;
+    color: $textwhite;
+  }
+
+  li {
+    font-size: 14px;
+    font-family: $montserrat;
+    margin: 40px 27px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $textwhite;
+  }
+
+  li .active a,
+  li a:hover {
+    color: $textyellow;
+    border-bottom: 2px solid $textyellow;
+    padding-bottom: 5px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  max-width: 1200px;
+  margin: 0 auto;
+}

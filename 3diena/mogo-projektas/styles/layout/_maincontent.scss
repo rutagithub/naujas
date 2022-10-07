@@ -6,9 +6,11 @@
 
 .container {
   max-width: 1200px;
-  border: 1px solid red;
+  // border: 1px solid red;
   margin: 0 auto;
 }
+
+// section title
 
 .title {
   text-align: center;
@@ -33,11 +35,12 @@
     color: $textgrey;
     font-size: $small;
     margin-bottom: 90px;
+    margin-top: 45px;
     padding: 0 130px;
     font-family: $roboto;
   }
 
   .red-line {
-    margin-bottom: 45px;
+    margin: 0 auto;
   }
 }

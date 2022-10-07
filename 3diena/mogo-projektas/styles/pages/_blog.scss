@@ -3,15 +3,64 @@
 #blog {
 
   .blog-row {
-
+    // border: 1px solid red;
     width: 100%;
+
     .article {
       display: inline-block;
-      width: 33%;
-      
+      width: 32%;
+      margin-top: 45px;
+      padding-left: 10px;
 
       img {
-        height: 240px;
+        width: 100%;
+      }
+
+      h5 {
+        font-family: $montserrat;
+        padding: 20px 0 20px 10px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: $roboto;
+        color: $textgrey;
+        font-size: $small;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        line-height: 1.6;
+        border-bottom: 1px solid $lightgrey;
+      }
+
+      .views-comments {
+        width: 50%;
+        padding-left: 10px;
+        padding-top: 15px;
+
+
+        img {
+          width: 20px;
+          height: auto;
+        }
+
+        p {
+          display: inline-block;
+          font-style: italic;
+          padding: 0;
+          border: none;
+        }
+
+        .views,
+        .comments {
+          display: inline-block;
+          width: 35%;
+        }
+
+        .comments {
+          img {
+            vertical-align: middle;
+          }
+        }
       }
     }
   }

@@ -1,4 +1,4 @@
-// header
+// home section background
 
 header {
   background: url('../../../../3diena/mogo-projektas/images/home_background_image.jpg') center;
@@ -7,54 +7,17 @@ header {
   height: 100vh;
 }
 
-// navigation 
-
-nav {
-
-  .logo,
-  .navbar,
-  li {
-    display: inline-block;
-  }
-
-  h3 {
-    font-weight: bold;
-    color: $textwhite;
-
-  }
-
-  li {
-    font-size: 14px;
-    font-family: $montserrat;
-    margin: 40px 27px;
-  }
-
-  a {
-    text-decoration: none;
-    color: $textwhite;
-  }
-
-  li .active a,
-  li a:hover {
-    color: $textyellow;
-    border-bottom: 2px solid $textyellow;
-  }
-
-  .logo {
-    width: 40%;
-  }
-
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-// content 
+// home section content 
 
 .content {
+  color: $textwhite;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
   h2 {
     font-family: $kaushan;
-    margin-top: 120px;
-    margin-bottom: 23px;
+    margin: 120px 0 23px 0;
   }
 
   h1 {
@@ -67,8 +30,7 @@ nav {
     font-weight: bold;
     font-family: $montserrat;
     padding: 12px 29px;
-    margin-top: 50px;
-    margin-bottom: 120px;
+    margin: 50px 0 120px 0;
 
     a {
       text-decoration: none;
@@ -76,14 +38,13 @@ nav {
     }
   }
 
-  color: $textwhite;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-
-  // bottom part
+  // home section content bottom part
 
   .main-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+
     h4 {
       font-family: $montserrat;
       font-weight: bold;
@@ -95,9 +56,6 @@ nav {
       font-size: $ssmaller;
       font-weight: lighter;
     }
-
-    max-width: 1200px;
-    margin: 0 auto;
   }
 
   .intro,
@@ -121,10 +79,26 @@ nav {
   .contacts {
     color: $lightyellow;
   }
-
 }
 
 
-
-
 // for screens less than 1200px
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
