@@ -160,16 +160,259 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 46px;
 }
 
 h6 {
-  font-size: 46px;
+  font-size: 14px;
+}
+
+.title {
+  text-align: center;
+}
+.title h4,
+.title h3 {
+  color: #333333;
+}
+.title h4 {
+  font-family: "Kaushan Script", cursive;
+}
+.title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.title p {
+  color: #999999;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  color: #ffffff;
+  text-align: center;
+}
+.content h2 {
+  font-family: "Kaushan Script", cursive;
+}
+.content button {
+  font-size: 14px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.content button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.content .main-bottom {
+  text-align: left;
+}
+.content .main-bottom h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.content .main-bottom span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.content .main-bottom .intro {
+  color: #ffffff;
+}
+.content .main-bottom .work,
+.content .main-bottom .about,
+.content .main-bottom .contacts {
+  color: #f7ebc5;
+}
+
+.statistics .stat-info {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+.statistics .stat-info p {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.statistics .stat-info h2 {
+  font-weight: bold;
+}
+
+#service .services {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto;
+}
+#service .services .service-item .service-text h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+#service .services .service-item .service-text p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  line-height: 1.6;
+}
+
+.what-we-do .activity-section .activity-item .activity-text h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.what-we-do .activity-section .activity-item .activity-text p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.reviews-section-one .review-items .review-item-text p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 24px;
+}
+.reviews-section-one .review-items .review-item-text h4 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.team .team-row {
+  text-align: center;
+}
+.team .team-row .team-member h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.team .team-row .team-member p {
+  color: #999999;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+.review-section-two .review-items .review-item-text p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 24px;
+}
+.review-section-two .review-items .review-item-text h4 {
+  font-family: "Kaushan Script", cursive;
+}
+
+.client-section .client-reviews .client-row .client .client-info h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.client-section .client-reviews .client-row .client .client-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #333333;
+}
+.client-section .client-reviews .client-row .client .client-info i {
+  font-style: italic;
+}
+.client-section .client-reviews .client-row .client .client-info p:last-child {
+  color: #999999;
+  line-height: 1.6;
+}
+
+#blog .blog-row .article h6 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+#blog .blog-row .article p {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-size: 15px;
+  line-height: 1.6;
+}
+#blog .blog-row .article .views-comments p {
+  font-style: italic;
+}
+
+.map .map-link {
+  text-align: center;
+}
+.map .map-link h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.map .map-link h4 a {
+  text-decoration: none;
+  color: #f38181;
+}
+
+#contacts h5 {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #cccccc;
+}
+#contacts p {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #999999;
+}
+#contacts .contacts .follow-part p {
+  color: #333333;
+}
+#contacts .contacts .follow-part b {
+  font-weight: bold;
+}
+#contacts .contacts .follow-part .follow-us p {
+  font-style: italic;
+}
+#contacts .contacts .form input[type=submit] {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+#contacts .contacts .form input[placeholder="Your Email..."] {
+  color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+#contacts .blogs h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+#contacts .blogs .blog-post-info h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #333333;
+}
+#contacts .blogs .blog-post-info p {
+  font-style: italic;
+  font-size: 13px;
+}
+#contacts .instagram h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+#contacts .instagram a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 13px;
+}
+#contacts .copyright {
+  text-align: center;
+}
+#contacts .copyright p {
+  color: #333333;
+}
+#contacts .copyright p span {
+  color: #f38181;
 }
 
 nav {
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 nav .logo,
 nav .navbar,
@@ -183,7 +426,7 @@ nav h3 {
 nav li {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  margin: 40px 27px;
+  margin: 30px 27px 0 27px;
 }
 nav a {
   text-decoration: none;
@@ -199,43 +442,84 @@ nav .logo {
   width: 40%;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav li {
+    margin: 15px 15px 0 15px;
+  }
+  nav .logo {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  nav {
+    text-align: center;
+  }
+  nav li {
+    margin: 15px 15px 0 15px;
+  }
+  nav .logo {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  nav {
+    text-align: center;
+  }
+  nav li {
+    margin: 20px 18px 0 18px;
+  }
+  nav .logo {
+    width: 25%;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
+  nav li {
+    margin: 20px 18px 0 18px;
+  }
+  nav .logo {
+    width: 25%;
+    margin-top: 15px;
+  }
+}
 .section {
   margin: 110px 0;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.title {
-  text-align: center;
-}
-.title h4,
-.title h3 {
-  color: #333333;
-}
 .title h4 {
-  font-family: "Kaushan Script", cursive;
   margin-bottom: 25px;
 }
 .title h3 {
-  font-family: "Montserrat", sans-serif;
   margin-bottom: 40px;
-  font-weight: bold;
 }
 .title p {
-  color: #999999;
-  font-size: 15px;
   margin-bottom: 90px;
   margin-top: 45px;
   padding: 0 130px;
-  font-family: "Roboto", sans-serif;
 }
 .title .red-line {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .title p {
+    padding: 0 50px;
+  }
+}
 .grey-line {
   width: 60px;
   background-color: #ffffff;
@@ -250,91 +534,170 @@ nav .logo {
 }
 
 .long-line {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   background-color: #f7ebc5;
   height: 3px;
 }
 
 .red-white-line {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 3px;
   background-color: #f38181;
 }
 
-header {
-  background: url("../../../../3diena/mogo-projektas/images/home_background_image.jpg") center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#home {
   height: 100vh;
 }
-
-.content {
-  color: #ffffff;
+#home header {
+  background: url("../images/home_background_image.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+#home .content {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  box-sizing: border-box;
 }
-.content h2 {
-  font-family: "Kaushan Script", cursive;
-  margin: 120px 0 23px 0;
+#home .content h2 {
+  margin: 150px 0 45px 0;
 }
-.content h1 {
-  padding: 0 50px 50px 50px;
+#home .content h1 {
+  margin: 0 50px 30px 50px;
 }
-.content button {
-  border: 2px solid #ffffff;
-  background-color: transparent;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+#home .content button {
   padding: 12px 29px;
-  margin: 50px 0 120px 0;
+  margin: 50px 0 140px 0;
 }
-.content button a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.content .main-bottom {
+#home .content .main-bottom {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: left;
+  box-sizing: border-box;
 }
-.content .main-bottom h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+#home .content .main-bottom h4 {
   display: inline;
 }
-.content .main-bottom span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: lighter;
-}
-.content .intro,
-.content .work,
-.content .about,
-.content .contacts {
+#home .content .main-bottom .intro,
+#home .content .main-bottom .work,
+#home .content .main-bottom .about,
+#home .content .main-bottom .contacts {
   display: inline-block;
   margin: 0 8px 25px 8px;
+  width: 23%;
 }
-.content .intro div,
-.content .work div,
-.content .about div,
-.content .contacts div {
+#home .content .main-bottom .intro div,
+#home .content .main-bottom .work div,
+#home .content .main-bottom .about div,
+#home .content .main-bottom .contacts div {
   margin-bottom: 25px;
 }
-.content .intro {
-  color: #ffffff;
-}
-.content .work,
-.content .about,
-.content .contacts {
-  color: #f7ebc5;
-}
 
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #home .content h1 {
+    font-size: 120px;
+    margin: 0 175px 20px 175px;
+  }
+  #home .content h2 {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #home {
+    height: 100%;
+  }
+  #home .content h1 {
+    font-size: 100px;
+    margin: 0 120px 25px 120px;
+  }
+  #home .content h2 {
+    font-size: 46px;
+  }
+  #home .content .main-bottom .intro,
+#home .content .main-bottom .work,
+#home .content .main-bottom .about,
+#home .content .main-bottom .contacts {
+    width: 22%;
+  }
+  #home .content .main-bottom .intro div,
+#home .content .main-bottom .work div,
+#home .content .main-bottom .about div,
+#home .content .main-bottom .contacts div {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #home {
+    height: 100%;
+  }
+  #home .content h1 {
+    font-size: 72px;
+    margin: 0 115px 40px 115px;
+  }
+  #home .content h2 {
+    font-size: 46px;
+    margin: 90px 0 25px 0;
+  }
+  #home .content button {
+    margin: 40px 0 70px 0;
+    padding: 7px 15px;
+    font-size: 13px;
+  }
+  #home .content .main-bottom h4,
+#home .content .main-bottom span {
+    font-size: 15px;
+  }
+  #home .content .main-bottom .intro,
+#home .content .main-bottom .work,
+#home .content .main-bottom .about,
+#home .content .main-bottom .contacts {
+    width: 21%;
+  }
+  #home .content .main-bottom .intro div,
+#home .content .main-bottom .work div,
+#home .content .main-bottom .about div,
+#home .content .main-bottom .contacts div {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #home {
+    height: 100%;
+  }
+  #home .content {
+    text-align: center;
+  }
+  #home .content h1 {
+    font-size: 55px;
+    margin: 0 40px 30px 40px;
+  }
+  #home .content h2 {
+    font-size: 30px;
+    margin: 80px 0 30px 0;
+  }
+  #home .content button {
+    margin: 40px 0 80px 0;
+    padding: 7px 15px;
+    font-size: 13px;
+  }
+  #home .content .main-bottom h4,
+#home .content .main-bottom span {
+    font-size: 13px;
+  }
+  #home .content .main-bottom .intro,
+#home .content .main-bottom .work,
+#home .content .main-bottom .about,
+#home .content .main-bottom .contacts {
+    width: 45%;
+  }
+  #home .content .main-bottom .intro div,
+#home .content .main-bottom .work div,
+#home .content .main-bottom .about div,
+#home .content .main-bottom .contacts div {
+    margin-bottom: 10px;
+  }
+}
 #blog .blog-row {
   width: 100%;
 }
@@ -347,18 +710,12 @@ header {
 #blog .blog-row .article img {
   width: 100%;
 }
-#blog .blog-row .article h5 {
-  font-family: "Montserrat", sans-serif;
+#blog .blog-row .article h6 {
   padding: 20px 0 20px 10px;
-  text-transform: uppercase;
 }
 #blog .blog-row .article p {
-  font-family: "Roboto", sans-serif;
-  color: #999999;
-  font-size: 15px;
-  padding-left: 10px;
   padding-bottom: 20px;
-  line-height: 1.6;
+  padding-left: 10px;
   border-bottom: 1px solid #e5e5e5;
 }
 #blog .blog-row .article .views-comments {
@@ -372,7 +729,6 @@ header {
 }
 #blog .blog-row .article .views-comments p {
   display: inline-block;
-  font-style: italic;
   padding: 0;
   border: none;
 }
@@ -385,14 +741,92 @@ header {
   vertical-align: middle;
 }
 
-#works .works-pictures {
-  margin: 0;
-  padding: 0;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #blog .red-line {
+    margin-bottom: 30px;
+  }
+  #blog .blog-row .article {
+    display: -inline-block;
+    width: 32%;
+    margin: 0 auto;
+  }
+  #blog .blog-row .article p {
+    padding-left: 10px;
+  }
+  #blog .blog-row .article .views-comments {
+    width: 70%;
+    padding: 15px 0 35px 10px;
+  }
 }
-#works .works-pictures img {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  #blog .red-line {
+    margin-bottom: 30px;
+  }
+  #blog .blog-row .article {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  #blog .blog-row .article p {
+    padding-left: 10px;
+  }
+  #blog .blog-row .article .views-comments {
+    width: 50%;
+    padding: 15px 0 35px 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #blog .red-line {
+    margin-bottom: 30px;
+  }
+  #blog .blog-row .article {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #blog .blog-row .article h6 {
+    font-size: 13px;
+  }
+  #blog .blog-row .article p {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+  #blog .blog-row .article .views-comments {
+    width: 60%;
+    padding: 15px 0 35px 10px;
+  }
+  #blog .blog-row .article .views-comments p {
+    font-size: 13px;
+  }
+}
+#works .works-images {
+  margin: 0;
   width: 100%;
 }
+#works .works-images .images-block {
+  display: inline-block;
+  width: 24%;
+}
+#works .works-images .images-block img {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+}
 
+@media only screen and (max-width: 768px) {
+  #works .works-images .images-block {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #works .works-images .images-block {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .review-section-two .review-items {
   margin: 0 20px;
 }
@@ -419,11 +853,6 @@ header {
   width: 70%;
 }
 .review-section-two .review-items .review-item-text p {
-  font-family: "Roboto", sans-serif;
-  color: #999999;
-  font-style: italic;
-  line-height: 1.6;
-  font-size: 24px;
   margin-bottom: 15px;
 }
 .review-section-two .review-items .review-item-text .red-line {
@@ -431,12 +860,11 @@ header {
   margin-right: 5px;
 }
 .review-section-two .review-items .review-item-text h4 {
-  font-family: "Kaushan Script", cursive;
   display: inline-block;
 }
 
 .client-section {
-  background: url("../../../../3diena/mogo-projektas/images/background_3.jpg") center;
+  background: url("/images/background_3.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 110px;
@@ -469,45 +897,148 @@ header {
   display: inline-block;
   width: 70%;
 }
-.client-section .client-reviews .client-row .client .client-info h5 {
-  font-family: "Montserrat", sans-serif;
+.client-section .client-reviews .client-row .client .client-info h6 {
   margin-bottom: 15px;
-  color: #333333;
 }
 .client-section .client-reviews .client-row .client .client-info p {
-  font-family: "Roboto", sans-serif;
   margin-bottom: 15px;
-  font-size: 15px;
-  color: #333333;
-}
-.client-section .client-reviews .client-row .client .client-info i {
-  font-style: italic;
 }
 .client-section .client-reviews .client-row .client .client-info .red-line {
   margin-bottom: 25px;
 }
-.client-section .client-reviews .client-row .client .client-info p:last-child {
-  color: #999999;
-  line-height: 1.6;
-}
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .review-section-two .review-items .review-item-text {
+    width: 60%;
+  }
+  .client-section .client-reviews .client-row .client {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 15px 80px 15px;
+  }
+  .client-section .client-reviews .client-row .client .client-info {
+    width: 70%;
+  }
+  .client-section .client-reviews .client-row .client:nth-child(even) {
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .review-section-two .review-items .review-item-text {
+    width: 60%;
+    padding: 0 40px;
+  }
+  .review-section-two .review-items .review-item-text p,
+.review-section-two .review-items .review-item-text h4 {
+    font-size: 18px;
+  }
+  .client-section .client-reviews .client-row .client {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+  }
+  .client-section .client-reviews .client-row .client .client-info {
+    width: 60%;
+  }
+  .client-section .client-reviews .client-row .client:nth-child(even) {
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .review-section-two .review-items .review-item-text {
+    width: 55%;
+    padding: 0 35px;
+  }
+  .review-section-two .review-items .review-item-text p,
+.review-section-two .review-items .review-item-text h4 {
+    font-size: 15px;
+  }
+  .client-section .client-reviews .client-row .client {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+  }
+  .client-section .client-reviews .client-row .client .client-info {
+    width: 100%;
+    text-align: center;
+  }
+  .client-section .client-reviews .client-row .client .client-info .red-line {
+    margin: 0 auto;
+  }
+  .client-section .client-reviews .client-row .client .client-info p {
+    padding-top: 15px;
+  }
+  .client-section .client-reviews .client-row .client .client-image {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .client-section .client-reviews .client-row .client:nth-child(even) {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .review-section-two .review-items .review-item-text {
+    width: 50%;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  .review-section-two .review-items .review-item-text p,
+.review-section-two .review-items .review-item-text h4 {
+    font-size: 13px;
+  }
+  .review-section-two .review-items .review-item-text h4 {
+    padding-bottom: 20px;
+  }
+  .review-section-two .review-items .review-item-picture {
+    padding-left: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .review-section-two .review-items .review-item-icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .client-section .client-reviews .client-row .client {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+  }
+  .client-section .client-reviews .client-row .client .client-info {
+    width: 100%;
+    text-align: center;
+  }
+  .client-section .client-reviews .client-row .client .client-info .red-line {
+    margin: 0 auto;
+  }
+  .client-section .client-reviews .client-row .client .client-info p {
+    padding-top: 15px;
+  }
+  .client-section .client-reviews .client-row .client .client-image {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .client-section .client-reviews .client-row .client:nth-child(even) {
+    padding: 0 15px;
+  }
+}
 .map {
-  background: url("../../../../3diena/mogo-projektas/images/background_line.jpg") center;
+  background: url("../images/background_line.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .map .map-link {
-  text-align: center;
   padding: 56px 0;
 }
 .map .map-link h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   margin-bottom: 22px;
-}
-.map .map-link h4 a {
-  text-decoration: none;
-  color: #f38181;
 }
 .map .map-link img {
   margin-bottom: 18px;
@@ -516,17 +1047,8 @@ header {
   margin: 0 auto;
 }
 
-#contacts h6 {
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  color: #cccccc;
+#contacts h5 {
   margin-bottom: 40px;
-}
-#contacts p {
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  color: #999999;
 }
 #contacts .contacts,
 #contacts .blogs,
@@ -543,17 +1065,12 @@ header {
 }
 #contacts .contacts .follow-part p {
   margin-bottom: 20px;
-  color: #333333;
-}
-#contacts .contacts .follow-part b {
-  font-weight: bold;
 }
 #contacts .contacts .follow-part .follow-us {
   border-top: 1px solid #e5e5e5;
   padding-top: 20px;
 }
 #contacts .contacts .follow-part .follow-us p {
-  font-style: italic;
   display: inline;
   padding-right: 5px;
 }
@@ -571,31 +1088,19 @@ header {
   width: 230px;
 }
 #contacts .contacts .form input[type=submit] {
-  text-transform: uppercase;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   background-color: #95e1d3;
   border: none;
   padding: 17px 30px;
   width: 150px;
   margin-left: -5px;
 }
-#contacts .contacts .form input[placeholder="Your Email..."] {
-  color: #e5e5e5;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  font-size: 15px;
-}
 #contacts .blogs {
   width: 30%;
   vertical-align: top;
   padding-right: 15px;
 }
-#contacts .blogs h5 {
-  font-family: "Montserrat", sans-serif;
+#contacts .blogs h6 {
   padding-bottom: 40px;
-  color: #333333;
 }
 #contacts .blogs .blog-post {
   padding-bottom: 30px;
@@ -612,35 +1117,18 @@ header {
   width: 55%;
   padding: 0 10px;
 }
-#contacts .blogs .blog-post-info h5 {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+#contacts .blogs .blog-post-info h6 {
   padding-bottom: 10px;
-  line-height: 1.6;
-  color: #333333;
-}
-#contacts .blogs .blog-post-info p {
-  font-style: italic;
-  font-size: 13px;
 }
 #contacts .instagram {
   vertical-align: top;
   width: 25%;
 }
-#contacts .instagram h5 {
-  font-family: "Montserrat", sans-serif;
+#contacts .instagram h6 {
   padding-bottom: 40px;
-  color: #333333;
 }
 #contacts .instagram p {
   margin-top: 20px;
-}
-#contacts .instagram a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  font-size: 13px;
 }
 #contacts .instagram img {
   width: 100%;
@@ -649,16 +1137,111 @@ header {
 #contacts .copyright {
   border-top: 1px solid #e5e5e5;
   margin-top: 95px;
-  text-align: center;
 }
 #contacts .copyright p {
   margin: 25px 0;
-  color: #333333;
-}
-#contacts .copyright p span {
-  color: #f38181;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #contacts .contacts {
+    padding-right: 20px;
+  }
+  #contacts .contacts .form input[type=email] {
+    padding: 15px;
+    width: 230px;
+  }
+  #contacts .contacts .form input[type=submit] {
+    padding: 17px;
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #contacts .contacts,
+#contacts .blogs,
+#contacts .instagram {
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+    width: 50%;
+  }
+  #contacts .contacts .form {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  #contacts .contacts .form input[type=email] {
+    padding: 15px;
+    width: 200px;
+  }
+  #contacts .contacts .form input[type=submit] {
+    padding: 17px;
+    width: 120px;
+  }
+  .blogs .blog-post .blog-post-info {
+    vertical-align: top;
+    padding-left: 15px;
+  }
+  .instagram {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #contacts .contacts,
+#contacts .blogs,
+#contacts .instagram {
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+    width: 60%;
+  }
+  #contacts .contacts .form {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  #contacts .contacts .form input[type=email] {
+    padding: 15px;
+    width: 200px;
+  }
+  #contacts .contacts .form input[type=submit] {
+    padding: 17px;
+    width: 120px;
+  }
+  .blogs .blog-post .blog-post-info {
+    vertical-align: top;
+    padding-left: 15px;
+  }
+  .instagram {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contacts .contacts,
+#contacts .blogs,
+#contacts .instagram {
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+    width: 90%;
+  }
+  #contacts .contacts .form {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  #contacts .contacts .form input[type=email] {
+    padding: 15px;
+    width: 180px;
+  }
+  #contacts .contacts .form input[type=submit] {
+    padding: 17px;
+    width: 120px;
+  }
+  .blogs .blog-post .blog-post-info {
+    vertical-align: top;
+    padding-left: 15px;
+  }
+  .instagram {
+    margin-top: 20px;
+  }
+}
 #service .services {
   border-bottom: 1px solid #e5e5e5;
   margin: 0 auto;
@@ -677,22 +1260,15 @@ header {
   width: 78%;
   padding: 0 20px;
 }
-#service .services .service-item .service-text h5 {
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
+#service .services .service-item .service-text h6 {
   padding-bottom: 20px;
-}
-#service .services .service-item .service-text p {
-  font-family: "Roboto", sans-serif;
-  color: #999999;
-  line-height: 1.6;
 }
 #service .services:last-child {
   border: none;
 }
 
 .devices {
-  background: url("../../../../3diena/mogo-projektas/images/another_background.png") center;
+  background: url("../images/another_background.png") center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 905px;
@@ -703,11 +1279,13 @@ header {
 
 .what-we-do .activity-section .picture {
   display: inline-block;
-  width: 47%;
-  padding-right: 30px;
+  width: 49%;
+  vertical-align: bottom;
+  padding-right: 10px;
 }
 .what-we-do .activity-section .picture img {
   width: 100%;
+  max-width: 570px;
 }
 .what-we-do .activity-section .activity {
   display: inline-block;
@@ -727,24 +1305,25 @@ header {
   vertical-align: top;
   padding: 10px 0 0 10px;
 }
-.what-we-do .activity-section .activity-item .activity-text h5 {
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
+.what-we-do .activity-section .activity-item .activity-text h6 {
   padding-bottom: 20px;
   display: inline;
 }
 .what-we-do .activity-section .activity-item .activity-text p {
-  font-family: "Roboto", sans-serif;
-  color: #999999;
-  font-style: italic;
-  line-height: 1.6;
-  font-size: 15px;
   display: inline;
   width: 50%;
 }
 .what-we-do .activity-section .activity-item .activity-icon {
   width: 5%;
   vertical-align: middle;
+}
+.what-we-do .activity-section .activity-item .activity-icon img {
+  width: 100%;
+  max-width: 30px;
+}
+.what-we-do .activity-section .activity-item .activity-icon:nth-child(2) img {
+  width: 100%;
+  max-width: 7px;
 }
 .what-we-do .activity-section .activity-item:nth-child(2) {
   margin-bottom: 10px;
@@ -758,7 +1337,7 @@ header {
 }
 
 .reviews-section-one {
-  background: url("../../../../3diena/mogo-projektas/images/grey-line.jpg") center;
+  background: url("../images/grey-line.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -791,11 +1370,6 @@ header {
   width: 65%;
 }
 .reviews-section-one .review-items .review-item-text p {
-  font-family: "Roboto", sans-serif;
-  color: #999999;
-  font-style: italic;
-  line-height: 1.6;
-  font-size: 24px;
   margin-bottom: 15px;
 }
 .reviews-section-one .review-items .review-item-text .red-line {
@@ -803,13 +1377,9 @@ header {
   margin-right: 5px;
 }
 .reviews-section-one .review-items .review-item-text h4 {
-  font-family: "Kaushan Script", cursive;
   display: inline-block;
 }
 
-.team .team-row {
-  text-align: center;
-}
 .team .team-row .team-member {
   display: inline-block;
   width: 31%;
@@ -818,24 +1388,323 @@ header {
 .team .team-row .team-member img {
   width: 100%;
 }
-.team .team-row .team-member h5 {
+.team .team-row .team-member h6 {
   margin: 30px 0 15px 0;
-}
-.team .team-row .team-member p {
-  color: #999999;
-  font-style: italic;
-  font-family: "Roboto", sans-serif;
 }
 
 .logos {
-  background: url("../../../../3diena/mogo-projektas/images/grey-line.jpg") center;
+  background: url("../images/grey-line.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .logos .logo-image img {
   width: 100%;
+  margin: 60px 0;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #service .services {
+    margin: 0 auto;
+  }
+  #service .services .service-item {
+    display: block;
+    width: 50%;
+    padding: 50px 0 50px 0;
+    margin: 0 auto;
+  }
+  #service .services .service-item .service-icon {
+    display: inline-block;
+    width: 5%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  #service .services .service-item .service-text {
+    display: inline-block;
+    width: 80%;
+    padding: 0 20px;
+  }
+  .what-we-do .activity-section .picture {
+    display: block;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .what-we-do .activity-section .picture img {
+    width: 100%;
+    max-width: 570px;
+  }
+  .what-we-do .activity-section .activity {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .what-we-do .activity-section .activity .activity-item:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
+    width: 85%;
+    padding-right: 30px;
+  }
+  .reviews-section-one .review-items .review-item-text {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #service .services {
+    margin: 0 auto;
+  }
+  #service .services .service-item {
+    display: block;
+    width: 40%;
+    padding: 50px 0px 50px 0px;
+    margin: 0 auto;
+  }
+  #service .services .service-item .service-icon {
+    display: inline-block;
+    width: 5%;
+    padding-right: 20px;
+  }
+  #service .services .service-item .service-text {
+    display: inline-block;
+    width: 80%;
+    padding: 0 0px 0px 10px;
+  }
+  .what-we-do .activity-section .picture {
+    display: block;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .what-we-do .activity-section .picture img {
+    width: 100%;
+    max-width: 570px;
+  }
+  .what-we-do .activity-section .activity {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .what-we-do .activity-section .activity .activity-item {
+    padding: 15px;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text,
+.what-we-do .activity-section .activity .activity-item .activity-icon {
+    display: inline-block;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text {
+    width: 80%;
+    vertical-align: top;
+    padding: 10px 0 0 10px;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text h6 {
+    padding-bottom: 20px;
+    display: inline;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text p {
+    display: inline;
+    width: 50%;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-icon {
+    width: 5%;
+    vertical-align: middle;
+    padding-right: 7px;
+  }
+  .what-we-do .activity-section .activity .activity-item:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
+    width: 75%;
+    padding-right: 45px;
+  }
+  .reviews-section-one .review-items .review-item-text {
+    width: 60%;
+    padding: 0 40px;
+  }
+  .reviews-section-one .review-items .review-item-text p,
+.reviews-section-one .review-items .review-item-text h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #service .services {
+    margin: 0 auto;
+  }
+  #service .services .service-item {
+    display: block;
+    width: 40%;
+    padding: 50px 0px 50px 0px;
+    margin: 0 auto;
+  }
+  #service .services .service-item .service-icon {
+    display: inline-block;
+    width: 5%;
+    padding-right: 30px;
+  }
+  #service .services .service-item .service-text {
+    display: inline-block;
+    width: 75%;
+    padding: 0 0px 0px 10px;
+  }
+  .what-we-do .activity-section .picture {
+    display: block;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .what-we-do .activity-section .picture img {
+    width: 100%;
+    max-width: 570px;
+  }
+  .what-we-do .activity-section .activity {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .what-we-do .activity-section .activity .activity-item {
+    padding: 15px;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text,
+.what-we-do .activity-section .activity .activity-item .activity-icon {
+    display: inline-block;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text {
+    width: 75%;
+    vertical-align: top;
+    padding: 0 0 0 10px;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text h6 {
+    padding-bottom: 20px;
+    display: inline;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text p {
+    display: inline;
+    width: 50%;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-icon {
+    padding-right: 7px;
+  }
+  .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
+    width: 70%;
+    padding-right: 45px;
+  }
+  .reviews-section-one .review-items .review-item-text {
+    width: 55%;
+    padding: 0 35px;
+  }
+  .reviews-section-one .review-items .review-item-text p,
+.reviews-section-one .review-items .review-item-text h4 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #service .services {
+    margin: 0 auto;
+  }
+  #service .services .service-item {
+    display: block;
+    width: 70%;
+    padding: 50px 0px 50px 0px;
+    margin: 0 auto;
+  }
+  #service .services .service-item .service-icon {
+    display: block;
+    width: 5%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  #service .services .service-item .service-text {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0px 0px 10px;
+    text-align: center;
+  }
+  .what-we-do .activity-section .picture {
+    display: block;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .what-we-do .activity-section .picture img {
+    width: 100%;
+    max-width: 570px;
+  }
+  .what-we-do .activity-section .activity {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .what-we-do .activity-section .activity .activity-item {
+    padding: 15px;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text,
+.what-we-do .activity-section .activity .activity-item .activity-icon {
+    display: inline-block;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text {
+    width: 65%;
+    vertical-align: top;
+    padding: 0 0 0 10px;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text h6 {
+    padding-bottom: 20px;
+    display: inline;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-text p {
+    display: inline;
+    width: 50%;
+  }
+  .what-we-do .activity-section .activity .activity-item .activity-icon {
+    padding-right: 10px;
+  }
+  .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
+    width: 65%;
+    padding-right: 30px;
+  }
+  .reviews-section-one .review-items .review-item-text {
+    width: 45%;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  .reviews-section-one .review-items .review-item-text p,
+.reviews-section-one .review-items .review-item-text h4 {
+    font-size: 13px;
+  }
+  .reviews-section-one .review-items .review-item-text h4 {
+    padding-bottom: 20px;
+  }
+  .reviews-section-one .review-items .review-item-picture {
+    padding-left: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .reviews-section-one .review-items .review-item-icon {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .team .team-row .team-member {
+    display: block;
+    width: 50%;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .team .team-row .team-member img {
+    width: 100%;
+  }
+  .team .team-row .team-member h6 {
+    margin: 30px 0 15px 0;
+  }
+  .team .team-row .team-member p {
+    margin-bottom: 30px;
+  }
+}
 #about {
   background-color: #ffffff;
   margin: 90px 0 110px 0;
@@ -845,32 +1714,69 @@ header {
   width: 100%;
   max-width: 380px;
 }
-#about .image-row img[alt=superteam] {
-  height: 260px;
-}
 
 .statistics {
-  background: url("../../../3diena/mogo-projektas/images/blue_line.jpg");
+  background: url("../images/blue_line.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .statistics .stat-info {
   display: inline-block;
   width: 19%;
-  text-align: center;
   padding: 80px 3px;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
   border-left: 1px solid #b5eae0;
 }
-.statistics .stat-info p {
-  text-transform: uppercase;
-  font-size: 15px;
-}
 .statistics .stat-info h2 {
-  font-weight: bold;
   margin-bottom: 30px;
 }
 .statistics .stat-info:last-child {
   border-right: 1px solid #b5eae0;
+}
+
+@media only screen and (max-width: 1199px) {
+  #about .image-row img {
+    width: 90%;
+    max-width: 380px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .statistics .stat-info {
+    width: 19%;
+    padding: 80px 0px;
+  }
+  .statistics .stat-info p {
+    font-size: 12px;
+  }
+  .statistics .stat-info h2 {
+    font-size: 55px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .statistics .stat-info {
+    width: 18%;
+    padding: 80px 4px;
+  }
+  .statistics .stat-info h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+  .statistics .stat-info p {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .statistics .stat-info {
+    width: 100%;
+    padding: 30px 4px;
+    display: block;
+  }
+  .statistics .stat-info h2 {
+    margin-bottom: 20px;
+    font-size: 72px;
+  }
+  .statistics .stat-info p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */

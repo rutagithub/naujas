@@ -9,17 +9,18 @@
   width: 60px;
   background-color: $salmon;
   height: 3px;
-  // margin: 0 auto;
 }
 
 .long-line {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   background-color: $lightyellow;
   height: 3px;
 }
 
 .red-white-line {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 3px;
   background-color: $salmon;
 }

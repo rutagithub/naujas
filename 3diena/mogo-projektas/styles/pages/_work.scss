@@ -1,19 +1,53 @@
-#works {
-  .works-pictures {
-    margin: 0;
-    padding: 0;
+// work section 
 
-    img {
-      width: 100%;
+#works {
+  .works-images {
+    margin: 0;
+    width: 100%;
+
+    .images-block {
+      display: inline-block;
+      width: 24%;
+
+      img {
+        width: 100%;
+        max-width: 480px;
+        display: block;
+      }
+    }
+  }
+}
+
+// breakpoint for work section
+
+@media only screen and (max-width: $medium-breakpoint) {
+
+  #works {
+    .works-images {
+      .images-block {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small-breakpoint) {
+  #works {
+    .works-images {
+      .images-block {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
     }
   }
 }
 
 // review section two
-// reviews kartojasi, galima i main content perkelti koda
+
 .review-section-two {
-
-
   .review-items {
     margin: 0 20px;
 
@@ -43,11 +77,6 @@
 
     .review-item-text {
       p {
-        font-family: $roboto;
-        color: $textgrey;
-        font-style: italic;
-        line-height: 1.6;
-        font-size: $smaller;
         margin-bottom: 15px;
       }
 
@@ -57,7 +86,6 @@
       }
 
       h4 {
-        font-family: $kaushan;
         display: inline-block;
       }
 
@@ -66,11 +94,10 @@
   }
 }
 
-
 // clients section 
 
 .client-section {
-  background: url('../../../../3diena/mogo-projektas/images/background_3.jpg') center;
+  background: url('/images/background_3.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 110px;
@@ -105,33 +132,226 @@
           display: inline-block;
           width: 70%;
 
-          h5 {
-            font-family: $montserrat;
+          h6 {
             margin-bottom: 15px;
-            color: $textblack;
           }
 
           p {
-            font-family: $roboto;
             margin-bottom: 15px;
-            font-size: $small;
-            color: $textblack;
-          }
-
-          i {
-            font-style: italic;
           }
 
           .red-line {
             margin-bottom: 25px;
           }
         }
+      }
+    }
+  }
+}
 
-        .client-info p:last-child {
-          color: $textgrey;
-          line-height: 1.6;
+// breakpoints
+
+@media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
+
+  // reviews section 2
+
+  .review-section-two {
+    .review-items {
+      .review-item-text {
+        width: 60%;
+      }
+    }
+  }
+
+  // clients section 
+  .client-section {
+    .client-reviews {
+      .client-row {
+        .client {
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+          padding: 0 15px 80px 15px;
+
+          .client-info {
+            width: 70%;
+          }
+        }
+
+        .client:nth-child(even) {
+          padding: 0 15px;
         }
       }
     }
   }
+}
+
+@media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
+  // reviews section 2
+
+  .review-section-two {
+    .review-items {
+      .review-item-text {
+        width: 60%;
+        padding: 0 40px;
+
+        p,
+        h4 {
+          font-size: $ssmaller;
+        }
+      }
+    }
+  }
+
+  // clients section 
+  .client-section {
+    .client-reviews {
+      .client-row {
+        .client {
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+          padding: 0 0 80px 0;
+
+          .client-info {
+            width: 60%;
+          }
+        }
+
+        .client:nth-child(even) {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+
+  // reviews section 2
+
+  .review-section-two {
+    .review-items {
+      .review-item-text {
+        width: 55%;
+        padding: 0 35px;
+
+        p,
+        h4 {
+          font-size: $small;
+        }
+      }
+    }
+  }
+
+  // clients section 
+  .client-section {
+    .client-reviews {
+      .client-row {
+        .client {
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+          padding: 0 0 80px 0;
+
+          .client-info {
+            width: 100%;
+            text-align: center;
+
+            .red-line {
+              margin: 0 auto;
+            }
+
+            p {
+              padding-top: 15px;
+            }
+          }
+
+          .client-image {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 15px;
+          }
+        }
+
+        .client:nth-child(even) {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small-breakpoint) {
+  // reviews section 1
+
+  .review-section-two {
+    .review-items {
+      .review-item-text {
+        width: 50%;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+
+        p,
+        h4 {
+          font-size: $ssmallest;
+        }
+
+        h4 {
+          padding-bottom: 20px;
+        }
+      }
+
+      .review-item-picture {
+        padding-left: 0;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+
+      .review-item-icon {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // clients section 
+  .client-section {
+    .client-reviews {
+      .client-row {
+        .client {
+          display: block;
+          width: 80%;
+          margin: 0 auto;
+          padding: 0 0 80px 0;
+
+          .client-info {
+            width: 100%;
+            text-align: center;
+
+            .red-line {
+              margin: 0 auto;
+            }
+
+            p {
+              padding-top: 15px;
+            }
+          }
+
+          .client-image {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 15px;
+          }
+        }
+
+        .client:nth-child(even) {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+
 }

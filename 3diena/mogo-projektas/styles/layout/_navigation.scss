@@ -1,11 +1,16 @@
 // navigation 
 
 nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  // border: 1px solid red;
 
   .logo,
   .navbar,
   li {
     display: inline-block;
+
   }
 
   h3 {
@@ -16,7 +21,7 @@ nav {
   li {
     font-size: 14px;
     font-family: $montserrat;
-    margin: 40px 27px;
+    margin: 30px 27px 0 27px;
   }
 
   a {
@@ -34,7 +39,70 @@ nav {
   .logo {
     width: 40%;
   }
+}
 
-  max-width: 1200px;
-  margin: 0 auto;
+@media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
+  nav {
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+      margin: 15px 15px 0 15px;
+    }
+
+    .logo {
+      width: 25%;
+    }
+  }
+
+  // .navbar,
+  // .logo {
+  //   border: 1px solid red;
+  // }
+}
+
+@media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
+  nav {
+    text-align: center;
+
+    li {
+      margin: 15px 15px 0 15px;
+    }
+
+    .logo {
+      width: 25%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+  nav {
+    text-align: center;
+
+    li {
+      margin: 20px 18px 0 18px;
+    }
+
+    .logo {
+      width: 25%;
+      margin-top: 15px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: $small-breakpoint) {
+  nav {
+    text-align: center;
+
+    li {
+      margin: 20px 18px 0 18px;
+    }
+
+    .logo {
+      width: 25%;
+      margin-top: 15px;
+    }
+  }
 }

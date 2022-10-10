@@ -2,45 +2,44 @@
 
 .section {
   margin: 110px 0;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 1200px;
   // border: 1px solid red;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 // section title
 
 .title {
-  text-align: center;
-
-  h4,
-  h3 {
-    color: $textblack;
-  }
-
   h4 {
-    font-family: $kaushan;
     margin-bottom: 25px;
   }
 
   h3 {
-    font-family: $montserrat;
     margin-bottom: 40px;
-    font-weight: bold;
   }
 
   p {
-    color: $textgrey;
-    font-size: $small;
     margin-bottom: 90px;
     margin-top: 45px;
     padding: 0 130px;
-    font-family: $roboto;
   }
 
   .red-line {
     margin: 0 auto;
+  }
+}
+
+// section title breakpoint
+
+@media only screen and (max-width: $small-breakpoint) {
+  .title {
+    p {
+      padding: 0 50px;
+    }
   }
 }

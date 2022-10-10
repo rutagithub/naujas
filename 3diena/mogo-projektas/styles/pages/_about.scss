@@ -1,3 +1,5 @@
+// about section
+
 #about {
   background-color: $textwhite;
   margin: 90px 0 110px 0;
@@ -8,41 +10,98 @@
       width: 100%;
       max-width: 380px;
     }
-
-    img[alt="superteam"] {
-      height: 260px;
-    }
   }
 }
 
 // statistics line
 
 .statistics {
-  background: url('../../../3diena/mogo-projektas/images/blue_line.jpg');
+  background: url('../images/blue_line.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
   .stat-info {
     display: inline-block;
     width: 19%;
-    text-align: center;
     padding: 80px 3px;
-    color: $textwhite;
-    font-family: $montserrat;
     border-left: 1px solid $lightmint;
 
-    p {
-      text-transform: uppercase;
-      font-size: $small;
-    }
-
     h2 {
-      font-weight: bold;
       margin-bottom: 30px;
     }
   }
 
   .stat-info:last-child {
     border-right: 1px solid $lightmint;
+  }
+}
+
+// up to 1200 px width (images part)
+@media only screen and (max-width: $extra-large-breakpoint) {
+  #about {
+    .image-row {
+      img {
+        width: 90%;
+        max-width: 380px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// statistics breakpoint
+@media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
+  .statistics {
+
+    .stat-info {
+      width: 19%;
+      padding: 80px 0px;
+
+      p {
+        font-size: $smallest;
+      }
+
+      h2 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
+  .statistics {
+    .stat-info {
+      width: 18%;
+      padding: 80px 4px;
+
+      h2 {
+        margin-bottom: 30px;
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $medium-breakpoint) {
+  .statistics {
+    .stat-info {
+      width: 100%;
+      padding: 30px 4px;
+      display: block;
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: $large;
+      }
+
+      p {
+        font-size: $small;
+      }
+    }
   }
 }

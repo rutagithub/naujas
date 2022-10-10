@@ -1,23 +1,15 @@
 // map 
 
 .map {
-  background: url('../../../../3diena/mogo-projektas/images/background_line.jpg') center;
+  background: url('../images/background_line.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
 
   .map-link {
-    text-align: center;
-    padding: 56px 0 ;
+    padding: 56px 0;
 
     h4 {
-      font-family: $montserrat;
-      font-weight: bold;
       margin-bottom: 22px;
-
-      a {
-        text-decoration: none;
-        color: $salmon;
-      }
     }
 
     img {
@@ -33,19 +25,8 @@
 // footer contacts part
 
 #contacts {
-
-  h6 {
-    font-weight: bold;
-    font-family: $montserrat;
-    color: $grey;
+  h5 {
     margin-bottom: 40px;
-  }
-
-  p {
-    font-size: $small;
-    font-family: $roboto;
-    line-height: 1.6;
-    color: $textgrey;
   }
 
   .contacts,
@@ -64,11 +45,6 @@
 
       p {
         margin-bottom: 20px;
-        color: $textblack;
-      }
-
-      b {
-        font-weight: bold;
       }
 
       .follow-us {
@@ -76,7 +52,6 @@
         padding-top: 20px;
 
         p {
-          font-style: italic;
           display: inline;
           padding-right: 5px;
         }
@@ -99,22 +74,11 @@
       }
 
       input[type="submit"] {
-        text-transform: uppercase;
-        color: $textwhite;
-        font-family: $montserrat;
-        font-weight: bold;
         background-color: $mint;
         border: none;
         padding: 17px 30px;
         width: 150px;
         margin-left: -5px;
-      }
-
-      input[placeholder="Your Email..."] {
-        color: $lightgrey;
-        font-family: $roboto;
-        font-style: italic;
-        font-size: $small;
       }
     }
   }
@@ -124,10 +88,8 @@
     vertical-align: top;
     padding-right: 15px;
 
-    h5 {
-      font-family: $montserrat;
+    h6 {
       padding-bottom: 40px;
-      color: $textblack;
     }
 
     .blog-post {
@@ -146,21 +108,10 @@
     .blog-post-info {
       display: inline-block;
       width: 55%;
-
       padding: 0 10px;
 
-      h5 {
-        text-transform: uppercase;
-        font-size: $smallest;
-        font-family: $montserrat;
+      h6 {
         padding-bottom: 10px;
-        line-height: 1.6;
-        color: $textblack;
-      }
-
-      p {
-        font-style: italic;
-        font-size: $ssmallest;
       }
     }
   }
@@ -169,21 +120,12 @@
     vertical-align: top;
     width: 25%;
 
-    h5 {
-      font-family: $montserrat;
+    h6 {
       padding-bottom: 40px;
-      color: $textblack;
     }
 
     p {
       margin-top: 20px;
-    }
-
-    a {
-      text-decoration: none;
-      font-family: $roboto;
-      font-style: italic;
-      font-size: $ssmallest;
     }
 
     img {
@@ -195,15 +137,166 @@
   .copyright {
     border-top: 1px solid $lightgrey;
     margin-top: 95px;
-    text-align: center;
 
     p {
       margin: 25px 0;
-      color: $textblack;
+    }
+  }
+}
 
-      span {
-        color: $salmon;
+// breakpoints
+
+@media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
+
+  #contacts {
+    .contacts {
+      padding-right: 20px;
+
+      .form {
+        input[type="email"] {
+          padding: 15px;
+          width: 230px;
+        }
+
+        input[type="submit"] {
+          padding: 17px;
+          width: 120px;
+        }
       }
     }
+  }
+}
+
+@media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
+
+  #contacts {
+
+    .contacts,
+    .blogs,
+    .instagram {
+      display: block;
+      margin: 0 auto;
+      padding-right: 0;
+      width: 50%;
+    }
+
+    .contacts {
+      .form {
+        margin-bottom: 50px;
+        width: 100%;
+
+        input[type="email"] {
+          padding: 15px;
+          width: 200px;
+        }
+
+        input[type="submit"] {
+          padding: 17px;
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .blogs {
+    .blog-post {
+      .blog-post-info {
+        vertical-align: top;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .instagram {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+
+  #contacts {
+
+    .contacts,
+    .blogs,
+    .instagram {
+      display: block;
+      margin: 0 auto;
+      padding-right: 0;
+      width: 60%;
+    }
+
+    .contacts {
+      .form {
+        margin-bottom: 50px;
+        width: 100%;
+
+        input[type="email"] {
+          padding: 15px;
+          width: 200px;
+        }
+
+        input[type="submit"] {
+          padding: 17px;
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .blogs {
+    .blog-post {
+      .blog-post-info {
+        vertical-align: top;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .instagram {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: $small-breakpoint) {
+  #contacts {
+
+    .contacts,
+    .blogs,
+    .instagram {
+      display: block;
+      margin: 0 auto;
+      padding-right: 0;
+      width: 90%;
+    }
+
+    .contacts {
+      .form {
+        margin-bottom: 50px;
+        width: 100%;
+
+        input[type="email"] {
+          padding: 15px;
+          width: 180px;
+        }
+
+        input[type="submit"] {
+          padding: 17px;
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .blogs {
+    .blog-post {
+      .blog-post-info {
+        vertical-align: top;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .instagram {
+    margin-top: 20px;
   }
 }

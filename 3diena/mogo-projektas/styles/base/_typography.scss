@@ -20,11 +20,379 @@ h4 {
 }
 
 h5 {
+  font-size: $ml;
+}
+
+h6 {
   font-size: $extrasmall;
 }
 
-// nepamiršti apkeisti su h5 ir pakeisti visur failuose
+// section title
 
-h6 {
-  font-size: $ml;
+.title {
+  text-align: center;
+
+  h4,
+  h3 {
+    color: $textblack;
+  }
+
+  h4 {
+    font-family: $kaushan;
+  }
+
+  h3 {
+    font-family: $montserrat;
+    font-weight: bold;
+  }
+
+  p {
+    color: $textgrey;
+    font-size: $small;
+
+    font-family: $roboto;
+  }
+}
+
+// home section typography
+
+.content {
+  color: $textwhite;
+  text-align: center;
+
+  h2 {
+    font-family: $kaushan;
+  }
+
+  button {
+    font-size: $extrasmall;
+    border: 2px solid $textwhite;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: $montserrat;
+
+    a {
+      text-decoration: none;
+      color: $textwhite;
+    }
+  }
+
+  .main-bottom {
+    text-align: left;
+
+    h4 {
+      font-family: $montserrat;
+      font-weight: bold;
+    }
+
+    span {
+      font-family: $montserrat;
+      font-size: $ssmaller;
+      font-weight: lighter;
+    }
+
+    .intro {
+      color: $textwhite;
+    }
+
+    .work,
+    .about,
+    .contacts {
+      color: $lightyellow;
+    }
+  }
+}
+
+// about section typography 
+
+.statistics {
+  .stat-info {
+    text-align: center;
+    color: $textwhite;
+    font-family: $montserrat;
+
+    p {
+      text-transform: uppercase;
+      font-size: $small;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+  }
+}
+
+// service section typography
+
+#service {
+  .services {
+    border-bottom: 1px solid $lightgrey;
+    margin: 0 auto;
+
+    .service-item {
+      .service-text {
+        h6 {
+          font-family: $montserrat;
+          color: $textblack;
+        }
+
+        p {
+          font-family: $roboto;
+          color: $textgrey;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+.what-we-do {
+  .activity-section {
+    .activity-item {
+      .activity-text {
+        h6 {
+          font-family: $montserrat;
+          color: $textblack;
+        }
+
+        p {
+          font-family: $roboto;
+          color: $textgrey;
+          font-style: italic;
+          line-height: 1.6;
+          font-size: $small;
+        }
+      }
+    }
+  }
+}
+
+.reviews-section-one {
+  .review-items {
+    .review-item-text {
+      p {
+        font-family: $roboto;
+        color: $textgrey;
+        font-style: italic;
+        line-height: 1.6;
+        font-size: $smaller;
+      }
+
+      h4 {
+        font-family: $kaushan;
+      }
+    }
+  }
+}
+
+.team {
+  .team-row {
+    text-align: center;
+
+    .team-member {
+
+      h6 {
+        font-family: $montserrat;
+      }
+
+      p {
+        color: $textgrey;
+        font-style: italic;
+        font-family: $roboto;
+      }
+    }
+  }
+}
+
+// work section
+
+.review-section-two {
+  .review-items {
+    .review-item-text {
+      p {
+        font-family: $roboto;
+        color: $textgrey;
+        font-style: italic;
+        line-height: 1.6;
+        font-size: $smaller;
+      }
+
+      h4 {
+        font-family: $kaushan;
+      }
+    }
+  }
+}
+
+.client-section {
+  .client-reviews {
+    .client-row {
+      .client {
+        .client-info {
+          h6 {
+            font-family: $montserrat;
+            color: $textblack;
+          }
+
+          p {
+            font-family: $roboto;
+            font-size: $small;
+            color: $textblack;
+          }
+
+          i {
+            font-style: italic;
+          }
+        }
+
+        .client-info p:last-child {
+          color: $textgrey;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+// blog section 
+
+#blog {
+
+  .blog-row {
+    .article {
+      h6 {
+        font-family: $montserrat;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: $roboto;
+        color: $textgrey;
+        font-size: $small;
+        line-height: 1.6;
+      }
+
+      .views-comments {
+        p {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+// contacts section
+
+.map {
+  .map-link {
+    text-align: center;
+
+    h4 {
+      font-family: $montserrat;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: $salmon;
+      }
+    }
+  }
+}
+
+#contacts {
+
+  h5 {
+    font-weight: bold;
+    font-family: $montserrat;
+    color: $grey;
+  }
+
+  p {
+    font-size: $small;
+    font-family: $roboto;
+    line-height: 1.6;
+    color: $textgrey;
+  }
+
+  .contacts {
+    .follow-part {
+      p {
+        color: $textblack;
+      }
+
+      b {
+        font-weight: bold;
+      }
+
+      .follow-us {
+        p {
+          font-style: italic;
+        }
+      }
+    }
+
+    .form {
+      input[type="submit"] {
+        text-transform: uppercase;
+        color: $textwhite;
+        font-family: $montserrat;
+        font-weight: bold;
+      }
+
+      input[placeholder="Your Email..."] {
+        color: $lightgrey;
+        font-family: $roboto;
+        font-style: italic;
+        font-size: $small;
+      }
+    }
+  }
+
+  .blogs {
+    h6 {
+      font-family: $montserrat;
+      color: $textblack;
+    }
+
+    .blog-post-info {
+      h6 {
+        text-transform: uppercase;
+        font-size: $smallest;
+        font-family: $montserrat;
+        line-height: 1.6;
+        color: $textblack;
+      }
+
+      p {
+        font-style: italic;
+        font-size: $ssmallest;
+      }
+    }
+  }
+
+  .instagram {
+    h6 {
+      font-family: $montserrat;
+      color: $textblack;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $roboto;
+      font-style: italic;
+      font-size: $ssmallest;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+
+    p {
+      color: $textblack;
+
+      span {
+        color: $salmon;
+      }
+    }
+  }
 }

@@ -1,104 +1,199 @@
 // home section background
-
-header {
-  background: url('../../../../3diena/mogo-projektas/images/home_background_image.jpg') center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#home {
   height: 100vh;
-}
 
-// home section content 
-
-.content {
-  color: $textwhite;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-
-  h2 {
-    font-family: $kaushan;
-    margin: 120px 0 23px 0;
+  header {
+    background: url('../images/home_background_image.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
   }
 
-  h1 {
-    padding: 0 50px 50px 50px;
-  }
+  // home section content 
 
-  button {
-    border: 2px solid $textwhite;
-    background-color: transparent;
-    font-weight: bold;
-    font-family: $montserrat;
-    padding: 12px 29px;
-    margin: 50px 0 120px 0;
-
-    a {
-      text-decoration: none;
-      color: $textwhite;
-    }
-  }
-
-  // home section content bottom part
-
-  .main-bottom {
+  .content {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: left;
+    box-sizing: border-box;
 
-    h4 {
-      font-family: $montserrat;
-      font-weight: bold;
-      display: inline;
+    h2 {
+      margin: 150px 0 45px 0;
     }
 
-    span {
-      font-family: $montserrat;
-      font-size: $ssmaller;
-      font-weight: lighter;
+    h1 {
+      margin: 0 50px 30px 50px;
     }
-  }
 
-  .intro,
-  .work,
-  .about,
-  .contacts {
-    display: inline-block;
-    margin: 0 8px 25px 8px;
-
-    div {
-      margin-bottom: 25px;
+    button {
+      padding: 12px 29px;
+      margin: 50px 0 140px 0;
     }
-  }
 
-  .intro {
-    color: $textwhite;
-  }
+    // home section content bottom part
 
-  .work,
-  .about,
-  .contacts {
-    color: $lightyellow;
+    .main-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      h4 {
+        display: inline;
+      }
+
+      .intro,
+      .work,
+      .about,
+      .contacts {
+        display: inline-block;
+        margin: 0 8px 25px 8px;
+        width: 23%;
+
+        div {
+          margin-bottom: 25px;
+        }
+      }
+    }
   }
 }
-
 
 // for screens less than 1200px
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
+  #home {
+    .content {
+      h1 {
+        font-size: 120px;
+        margin: 0 175px 20px 175px;
+      }
 
+      h2 {
+        font-size: 60px;
+      }
+    }
+  }
 }
 
-/* Extra small devices (phones, 600px and down) */
-// @media only screen and (max-width: 600px) {...}
+@media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
+  #home {
+    height: 100%;
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 600px) {...}
+    .content {
+      h1 {
+        font-size: 100px;
+        margin: 0 120px 25px 120px;
+      }
 
-/* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
+      h2 {
+        font-size: $ml;
+      }
 
-/* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {...}
+      // home section content bottom part
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {...}
+      .main-bottom {
+
+        .intro,
+        .work,
+        .about,
+        .contacts {
+          width: 22%;
+
+          div {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+  #home {
+    height: 100%;
+
+    .content {
+      h1 {
+        font-size: $large;
+        margin: 0 115px 40px 115px;
+      }
+
+      h2 {
+        font-size: $ml;
+        margin: 90px 0 25px 0;
+      }
+
+      button {
+        margin: 40px 0 70px 0;
+        padding: 7px 15px;
+        font-size: $ssmallest;
+      }
+
+      // home section content bottom part
+
+      .main-bottom {
+
+        h4,
+        span {
+          font-size: $small;
+        }
+
+        .intro,
+        .work,
+        .about,
+        .contacts {
+          width: 21%;
+
+          div {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small-breakpoint) {
+  #home {
+    height: 100%;
+
+    .content {
+      text-align: center;
+
+      h1 {
+        font-size: 55px;
+        margin: 0 40px 30px 40px;
+      }
+
+      h2 {
+        font-size: $medium;
+        margin: 80px 0 30px 0;
+      }
+
+      button {
+        margin: 40px 0 80px 0;
+        padding: 7px 15px;
+        font-size: $ssmallest;
+      }
+
+      // home section content bottom part
+
+      .main-bottom {
+
+        h4,
+        span {
+          font-size: $ssmallest;
+        }
+
+        .intro,
+        .work,
+        .about,
+        .contacts {
+          width: 45%;
+
+          div {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
