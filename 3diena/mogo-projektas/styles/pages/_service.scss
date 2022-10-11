@@ -35,14 +35,52 @@
 // devices section
 
 .devices {
-  background: url('../images/another_background.png') center;
+  background: url('../images/background_2.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 905px;
 
   .title {
     padding-top: 100px;
   }
+
+  /* Devices */
+
+  .devices-group {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    .devices-item {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .phone {
+      position: absolute;
+      bottom: -80px;
+      right: -100px;
+      z-index: 1;
+      padding-bottom: 20px;
+    }
+
+    .tablet {
+      padding-top: 50px;
+    }
+  }
+
+  /* Devices */
+  .devices-group {
+    max-width: 320px;
+  }
+
+  .phone {
+    width: 180px;
+    bottom: -50px;
+    right: -80px;
+  }
+
 }
 
 // what we do section
@@ -103,21 +141,44 @@
         }
       }
 
-      .activity-icon:nth-child(2) {
-        img {
-          width: 100%;
-          max-width: 7px;
-        }
-      }
+
+      // .activity-icon:nth-child(2) {
+      //   img {
+      //     width: 100%;
+      //     max-width: 7px;
+      //   }
+      // }
     }
 
     .activity-item:nth-child(2) {
       margin-bottom: 10px;
+      overflow: auto;
+      height: 140px;
 
       .activity-text {
         width: 90%;
         padding-right: 11px;
       }
+    }
+
+    .activity-item:nth-child(2)::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .activity-item:nth-child(2)::-webkit-scrollbar-thumb {
+      background-color: $mint;
+    }
+
+    .activity-item:nth-child(2)::-webkit-scrollbar-thumb:hover {
+      background-color: $mint;
+    }
+
+    .activity-item:nth-child(2)::-webkit-scrollbar-track {
+      background-color: $lightergrey;
+    }
+
+    .activity-item:nth-child(2)::-webkit-scrollbar-track:hover {
+      background-color: $lightergrey;
     }
 
     .activity-item:nth-child(3) {
@@ -196,14 +257,57 @@
       display: inline-block;
       width: 31%;
       padding-right: 15px;
+      position: relative;
 
       img {
         width: 100%;
+        max-width: 380px;
+        margin: 0 7px;
       }
 
       h6 {
         margin: 30px 0 15px 0;
       }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background-image: linear-gradient(to bottom right, $salmon, #e9d182);
+        margin: 0 7px;
+      }
+    }
+
+    .team-member:hover .overlay {
+      opacity: 0.9;
+    }
+
+    .text {
+      vertical-align: middle;
+      font-size: 0;
+      padding-top: 220px;
+
+      img {
+        width: 100%;
+        max-width: 15px;
+        height: 15px;
+        padding: 15px;
+        margin: 0;
+        background-color: #fce38a;
+        border-right: #f9bd87 1px solid;
+      }
+    }
+
+    .text img:first-child {
+      background-color: #f38181;
+      height: 18px;
+      width: 100%;
+      max-width: 12px;
+      padding-top: 12px;
     }
   }
 }
@@ -300,6 +404,30 @@
       }
     }
   }
+
+  // team section 
+  .team {
+    .team-row {
+      .team-member {
+        display: block;
+        width: 32%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+
+        h6 {
+          margin: 30px 0 15px 0;
+        }
+
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
 }
 
 // for screens less than 992px and more than 768px
@@ -413,6 +541,15 @@
       }
     }
   }
+
+  // team section 
+  .team {
+    .team-row {
+      .team-member {
+        width: 50%;
+      }
+    }
+  }
 }
 
 // for screens less than 768px and more than 600px
@@ -519,6 +656,15 @@
         h4 {
           font-size: $small;
         }
+      }
+    }
+  }
+
+  // team section 
+  .team {
+    .team-row {
+      .team-member {
+        width: 50%;
       }
     }
   }
@@ -655,34 +801,53 @@
     }
   }
 
-}
+  // devices section
 
-// team section breakpoint
+  .devices {
+    /* Devices */
 
-// for screens less than 1200px
+    .devices-group {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
 
-@media only screen and (max-width: $extra-large-breakpoint) {
+      .devices-item {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .phone {
+        position: absolute;
+        bottom: -80px;
+        right: -10px;
+        z-index: 1;
+        padding-bottom: 20px;
+      }
+
+      .tablet {
+        padding-top: 50px;
+      }
+    }
+
+    /* Devices */
+    .devices-group {
+      max-width: 320px;
+    }
+
+    .phone {
+      width: 180px;
+      bottom: -50px;
+      right: -80px;
+    }
+  }
 
   // team section 
   .team {
     .team-row {
       .team-member {
-        display: block;
-        width: 50%;
-        padding-right: 15px;
-        margin: 0 auto;
-
-        img {
-          width: 100%;
-        }
-
-        h6 {
-          margin: 30px 0 15px 0;
-        }
-
-        p {
-          margin-bottom: 30px;
-        }
+        width: 70%;
       }
     }
   }

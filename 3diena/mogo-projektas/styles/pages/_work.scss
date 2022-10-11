@@ -1,34 +1,106 @@
 // work section 
 
 #works {
+  font-size: 0;
+
   .works-images {
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    // width: 100%;
 
     .images-block {
       display: inline-block;
-      width: 24%;
+      width: 25%;
 
-      img {
-        width: 100%;
-        max-width: 480px;
-        display: block;
+
+      .image {
+        position: relative;
+
+        img {
+          width: 100%;
+          max-width: 480px;
+          display: block;
+          height: 390px;
+        }
+
+        img[alt="3"] {
+          height: 780px;
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          max-width: 480px;
+          opacity: 0;
+          transition: .5s ease;
+          background-image: linear-gradient($salmon, #e9d182);
+          // margin: 0 7px;
+
+          .text {
+            text-align: center;
+            padding-top: 130px;
+
+            h6 {
+              color: $textwhite;
+              font-family: $montserrat;
+              padding: 15px 0;
+            }
+
+            p {
+              color: $textwhite;
+              font-size: $small;
+              font-family: $roboto;
+              font-style: italic;
+            }
+
+            img {
+            width: 100%;
+            max-width: 30px;
+            padding-bottom: 10px;
+            height: 30px;
+            margin: 0 auto;
+            }
+          }
+        }
       }
+
+      .image:hover .overlay {
+        opacity: 0.9;
+      }
+
     }
   }
 }
 
 // breakpoints for work section
 
-// for screens less than 768px 
+// for screens less than 1200px 
 
-@media only screen and (max-width: $medium-breakpoint) {
+@media only screen and (max-width: $extra-large-breakpoint) {
 
   #works {
     .works-images {
       .images-block {
         display: block;
-        width: 50%;
+        width: 45%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// for screens less than 992px
+
+@media only screen and (max-width: $large-breakpoint) {
+  #works {
+    .works-images {
+      .images-block {
+        display: block;
+        width: 70%;
         margin: 0 auto;
       }
     }
@@ -42,7 +114,7 @@
     .works-images {
       .images-block {
         display: block;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
       }
     }
