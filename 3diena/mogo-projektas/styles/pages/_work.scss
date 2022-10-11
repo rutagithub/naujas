@@ -18,7 +18,9 @@
   }
 }
 
-// breakpoint for work section
+// breakpoints for work section
+
+// for screens less than 768px 
 
 @media only screen and (max-width: $medium-breakpoint) {
 
@@ -32,6 +34,8 @@
     }
   }
 }
+
+// for screens less than 600px
 
 @media only screen and (max-width: $small-breakpoint) {
   #works {
@@ -60,6 +64,12 @@
 
     .review-item-icon {
       width: 4%;
+
+      img {
+        width: 100%;
+        max-width: 15px;
+        height: auto;
+      }
     }
 
     .review-item-icon:last-child {
@@ -149,11 +159,13 @@
   }
 }
 
-// breakpoints
+// breakpoints for reviews and clients sections
+
+// for screens less than 1200px and more than 992px
 
 @media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
 
-  // reviews section 2
+  // reviews section two
 
   .review-section-two {
     .review-items {
@@ -164,6 +176,7 @@
   }
 
   // clients section 
+
   .client-section {
     .client-reviews {
       .client-row {
@@ -186,8 +199,10 @@
   }
 }
 
+// for screens less than 992px and more than 768px
+
 @media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
-  // reviews section 2
+  // reviews section two
 
   .review-section-two {
     .review-items {
@@ -226,9 +241,11 @@
   }
 }
 
+// for screens less than 768px and more than 600px
+
 @media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
 
-  // reviews section 2
+  // reviews section two
 
   .review-section-two {
     .review-items {
@@ -245,6 +262,7 @@
   }
 
   // clients section 
+
   .client-section {
     .client-reviews {
       .client-row {
@@ -282,13 +300,15 @@
   }
 }
 
+// for screens less than 600px
+
 @media only screen and (max-width: $small-breakpoint) {
-  // reviews section 1
+  // reviews section two
 
   .review-section-two {
     .review-items {
       .review-item-text {
-        width: 50%;
+        width: 70%;
         padding: 0;
         display: block;
         margin: 0 auto;
@@ -308,6 +328,7 @@
         display: block;
         margin: 0 auto;
         padding: 20px 0;
+        width: 20%;
       }
 
       .review-item-icon {
@@ -318,6 +339,7 @@
   }
 
   // clients section 
+
   .client-section {
     .client-reviews {
       .client-row {
@@ -353,5 +375,4 @@
       }
     }
   }
-
 }

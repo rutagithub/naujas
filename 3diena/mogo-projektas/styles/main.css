@@ -398,6 +398,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 13px;
+  color: #333333;
 }
 #contacts .copyright {
   text-align: center;
@@ -544,7 +545,7 @@ nav .logo {
   width: 100%;
   max-width: 280px;
   height: 3px;
-  background-color: #f38181;
+  background-image: linear-gradient(90deg, #f38181 30%, #ffffff 20%);
 }
 
 #home {
@@ -839,6 +840,11 @@ nav .logo {
 .review-section-two .review-items .review-item-icon {
   width: 4%;
 }
+.review-section-two .review-items .review-item-icon img {
+  width: 100%;
+  max-width: 15px;
+  height: auto;
+}
 .review-section-two .review-items .review-item-icon:last-child {
   text-align: right;
 }
@@ -982,7 +988,7 @@ nav .logo {
 }
 @media only screen and (max-width: 600px) {
   .review-section-two .review-items .review-item-text {
-    width: 50%;
+    width: 70%;
     padding: 0;
     display: block;
     margin: 0 auto;
@@ -999,6 +1005,7 @@ nav .logo {
     display: block;
     margin: 0 auto;
     padding: 20px 0;
+    width: 20%;
   }
   .review-section-two .review-items .review-item-icon {
     display: block;
@@ -1353,6 +1360,11 @@ nav .logo {
 .reviews-section-one .review-items .review-item-icon {
   width: 3%;
 }
+.reviews-section-one .review-items .review-item-icon img {
+  width: 100%;
+  max-width: 15px;
+  height: auto;
+}
 .reviews-section-one .review-items .review-item-icon:last-child {
   text-align: right;
 }
@@ -1409,14 +1421,13 @@ nav .logo {
   #service .services .service-item {
     display: block;
     width: 50%;
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
     margin: 0 auto;
   }
   #service .services .service-item .service-icon {
     display: inline-block;
     width: 5%;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 0 10px;
   }
   #service .services .service-item .service-text {
     display: inline-block;
@@ -1457,7 +1468,7 @@ nav .logo {
   #service .services .service-item {
     display: block;
     width: 40%;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0;
     margin: 0 auto;
   }
   #service .services .service-item .service-icon {
@@ -1468,7 +1479,7 @@ nav .logo {
   #service .services .service-item .service-text {
     display: inline-block;
     width: 80%;
-    padding: 0 0px 0px 10px;
+    padding: 0 0 0 10px;
   }
   .what-we-do .activity-section .picture {
     display: block;
@@ -1495,11 +1506,11 @@ nav .logo {
   }
   .what-we-do .activity-section .activity .activity-item .activity-text {
     width: 80%;
-    vertical-align: top;
-    padding: 10px 0 0 10px;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text h6 {
-    padding-bottom: 20px;
+    padding-bottom: 0;
     display: inline;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text p {
@@ -1508,15 +1519,15 @@ nav .logo {
   }
   .what-we-do .activity-section .activity .activity-item .activity-icon {
     width: 5%;
-    vertical-align: middle;
+    vertical-align: top;
     padding-right: 7px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) {
     margin-bottom: 10px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
-    width: 75%;
-    padding-right: 45px;
+    width: 78%;
+    padding-right: 35px;
   }
   .reviews-section-one .review-items .review-item-text {
     width: 60%;
@@ -1534,7 +1545,7 @@ nav .logo {
   #service .services .service-item {
     display: block;
     width: 40%;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px;
     margin: 0 auto;
   }
   #service .services .service-item .service-icon {
@@ -1545,7 +1556,7 @@ nav .logo {
   #service .services .service-item .service-text {
     display: inline-block;
     width: 75%;
-    padding: 0 0px 0px 10px;
+    padding: 0 0 0 10px;
   }
   .what-we-do .activity-section .picture {
     display: block;
@@ -1572,11 +1583,10 @@ nav .logo {
   }
   .what-we-do .activity-section .activity .activity-item .activity-text {
     width: 75%;
-    vertical-align: top;
     padding: 0 0 0 10px;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text h6 {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     display: inline;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text p {
@@ -1587,8 +1597,8 @@ nav .logo {
     padding-right: 7px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
-    width: 70%;
-    padding-right: 45px;
+    width: 75%;
+    padding-right: 30px;
   }
   .reviews-section-one .review-items .review-item-text {
     width: 55%;
@@ -1606,7 +1616,7 @@ nav .logo {
   #service .services .service-item {
     display: block;
     width: 70%;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px;
     margin: 0 auto;
   }
   #service .services .service-item .service-icon {
@@ -1618,12 +1628,12 @@ nav .logo {
   #service .services .service-item .service-text {
     display: inline-block;
     width: 100%;
-    padding: 0 0px 0px 10px;
+    padding: 0 0 0 10px;
     text-align: center;
   }
   .what-we-do .activity-section .picture {
     display: block;
-    width: 50%;
+    width: 80%;
     padding: 0;
     margin: 0 auto;
   }
@@ -1633,7 +1643,7 @@ nav .logo {
   }
   .what-we-do .activity-section .activity {
     display: block;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     padding: 0;
   }
@@ -1645,9 +1655,9 @@ nav .logo {
     display: inline-block;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text {
-    width: 65%;
-    vertical-align: top;
-    padding: 0 0 0 10px;
+    width: 68%;
+    vertical-align: middle;
+    padding: 0 20px 0 10px;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text h6 {
     padding-bottom: 20px;
@@ -1661,11 +1671,14 @@ nav .logo {
     padding-right: 10px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
-    width: 65%;
-    padding-right: 30px;
+    width: 78%;
+    padding-right: 20px;
+  }
+  .reviews-section-one .review-items {
+    padding-right: 0;
   }
   .reviews-section-one .review-items .review-item-text {
-    width: 45%;
+    width: 70%;
     padding: 0;
     display: block;
     margin: 0 auto;
@@ -1682,6 +1695,7 @@ nav .logo {
     display: block;
     margin: 0 auto;
     padding: 20px 0;
+    width: 20%;
   }
   .reviews-section-one .review-items .review-item-icon {
     display: block;

@@ -36,7 +36,9 @@
   }
 }
 
-// up to 1200 px width (images part)
+// breakpoints
+
+// for screens up to 1200px (about section images part)
 @media only screen and (max-width: $extra-large-breakpoint) {
   #about {
     .image-row {
@@ -50,7 +52,10 @@
   }
 }
 
-// statistics breakpoint
+// statistics breakpoints
+
+// for screens less than 1200px and more than 992px
+
 @media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
   .statistics {
 
@@ -63,11 +68,13 @@
       }
 
       h2 {
-        font-size: 55px;
+        font-size: $emlg;
       }
     }
   }
 }
+
+// for screens less than 992px and more than 768px
 
 @media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
   .statistics {
@@ -81,11 +88,13 @@
       }
 
       p {
-        font-size: 10px;
+        font-size: $xxs;
       }
     }
   }
 }
+
+// for screens less than 768px
 
 @media only screen and (max-width: $medium-breakpoint) {
   .statistics {

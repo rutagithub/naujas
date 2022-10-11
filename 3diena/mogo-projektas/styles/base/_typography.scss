@@ -146,6 +146,8 @@ h6 {
   }
 }
 
+// what we do section typography
+
 .what-we-do {
   .activity-section {
     .activity-item {
@@ -167,6 +169,8 @@ h6 {
   }
 }
 
+// reviews section one typography
+
 .reviews-section-one {
   .review-items {
     .review-item-text {
@@ -184,6 +188,8 @@ h6 {
     }
   }
 }
+
+// team section typography
 
 .team {
   .team-row {
@@ -224,6 +230,8 @@ h6 {
   }
 }
 
+// client section typography
+
 .client-section {
   .client-reviews {
     .client-row {
@@ -254,7 +262,7 @@ h6 {
   }
 }
 
-// blog section 
+// blog section typography
 
 #blog {
 
@@ -281,7 +289,7 @@ h6 {
   }
 }
 
-// contacts section
+// contacts section typography
 
 .map {
   .map-link {
@@ -381,6 +389,7 @@ h6 {
       font-family: $roboto;
       font-style: italic;
       font-size: $ssmallest;
+      color: $textblack;
     }
   }
 

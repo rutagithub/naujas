@@ -35,6 +35,8 @@
     display: inline-block;
   }
 
+  // MoGo contacts part
+
   .contacts {
     width: 40%;
     vertical-align: top;
@@ -83,6 +85,8 @@
     }
   }
 
+  // Blogs part
+
   .blogs {
     width: 30%;
     vertical-align: top;
@@ -116,6 +120,8 @@
     }
   }
 
+  // Instagram part
+
   .instagram {
     vertical-align: top;
     width: 25%;
@@ -146,6 +152,8 @@
 
 // breakpoints
 
+// for screens less than 1200px and more than 992px
+
 @media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
 
   #contacts {
@@ -166,6 +174,8 @@
     }
   }
 }
+
+// for screens less than 992px and more than 768px
 
 @media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
 
@@ -212,6 +222,8 @@
   }
 }
 
+// for screens less than 768px and more than 600px
+
 @media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
 
   #contacts {
@@ -256,6 +268,8 @@
     margin-top: 20px;
   }
 }
+
+// for screens less than 600px
 
 @media only screen and (max-width: $small-breakpoint) {
   #contacts {

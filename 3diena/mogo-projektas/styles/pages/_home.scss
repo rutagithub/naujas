@@ -2,6 +2,7 @@
 #home {
   height: 100vh;
 
+  // home section background
   header {
     background: url('../images/home_background_image.jpg') center;
     background-repeat: no-repeat;
@@ -56,22 +57,26 @@
   }
 }
 
-// for screens less than 1200px
+// breakpoints
+
+// for screens less than 1200px and more than 992px
 
 @media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
   #home {
     .content {
       h1 {
-        font-size: 120px;
+        font-size: $xxlg;
         margin: 0 175px 20px 175px;
       }
 
       h2 {
-        font-size: 60px;
+        font-size: $mlg;
       }
     }
   }
 }
+
+// for screens less than 992px and more than 768px
 
 @media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
   #home {
@@ -79,15 +84,13 @@
 
     .content {
       h1 {
-        font-size: 100px;
+        font-size: $xlg;
         margin: 0 120px 25px 120px;
       }
 
       h2 {
         font-size: $ml;
       }
-
-      // home section content bottom part
 
       .main-bottom {
 
@@ -105,6 +108,8 @@
     }
   }
 }
+
+// for screens less than 768px and more than 600px
 
 @media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
   #home {
@@ -126,8 +131,6 @@
         padding: 7px 15px;
         font-size: $ssmallest;
       }
-
-      // home section content bottom part
 
       .main-bottom {
 
@@ -151,6 +154,8 @@
   }
 }
 
+// for screens less than 600px
+
 @media only screen and (max-width: $small-breakpoint) {
   #home {
     height: 100%;
@@ -159,7 +164,7 @@
       text-align: center;
 
       h1 {
-        font-size: 55px;
+        font-size: $emlg;
         margin: 0 40px 30px 40px;
       }
 
@@ -173,8 +178,6 @@
         padding: 7px 15px;
         font-size: $ssmallest;
       }
-
-      // home section content bottom part
 
       .main-bottom {
 

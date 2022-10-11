@@ -1,3 +1,5 @@
+// line components
+
 .grey-line {
   width: 60px;
   background-color: $textwhite;
@@ -22,5 +24,5 @@
   width: 100%;
   max-width: 280px;
   height: 3px;
-  background-color: $salmon;
+  background-image: linear-gradient(90deg, $salmon 30%, $textwhite 20%);
 }
