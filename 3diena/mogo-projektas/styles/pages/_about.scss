@@ -5,12 +5,32 @@
   margin: 90px 0 110px 0;
 
   .image-row {
+    .image-item {
+      display: inline-block;
+
+      .image-inner {
+        position: relative;
+        background: #95e1d3;
+        width: 100%;
+        max-width: 375px;
+        height: 250px;
+        margin-right: 22px;
+      }
+
+      .image-inner:hover .image {
+        transform: translate3d(-10px, -10px, 0);
+      }
+
+      .image-inner:hover .image img {
+        opacity: 1;
+      }
+    }
+
     .image {
       display: inline-block;
       position: relative;
 
       img {
-        margin: 0 7px;
         width: 100%;
         max-width: 380px;
         height: 250px;
@@ -28,8 +48,7 @@
       max-width: 380px;
       opacity: 0;
       transition: .5s ease;
-      background-image: linear-gradient(to bottom right, $salmon, #e9d182);
-      margin: 0 7px;
+      background-image: linear-gradient(to bottom right, $salmon, $yelloworange);
     }
 
     .image:hover .overlay {
@@ -87,7 +106,7 @@
 @media only screen and (max-width: $extra-large-breakpoint) {
   #about {
     .image-row {
-      .image {
+      .image-item {
         display: block;
         margin: 0 auto;
         width: 90%;

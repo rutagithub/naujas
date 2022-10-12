@@ -141,13 +141,13 @@ table {
 }
 
 h1 {
-  font-size: 9.375rem;
+  font-size: calc(7.2rem + 0.2vw);
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: calc(3rem + 0.2vw);
 }
 
 h3 {
@@ -237,6 +237,7 @@ h6 {
 }
 .statistics .stat-info h2 {
   font-weight: bold;
+  font-size: 4.5rem;
 }
 
 #service .services {
@@ -279,13 +280,14 @@ h6 {
 .team .team-row {
   text-align: center;
 }
-.team .team-row .team-member h6 {
+.team .team-row .team-item h6 {
   font-family: "Montserrat", sans-serif;
 }
-.team .team-row .team-member p {
+.team .team-row .team-item p {
   color: #999999;
   font-style: italic;
   font-family: "Roboto", sans-serif;
+  font-size: 0.938rem;
 }
 
 .review-section-two .review-items .review-item-text p {
@@ -562,14 +564,14 @@ nav .logo {
   box-sizing: border-box;
 }
 #home .content h2 {
-  margin: 150px 0 35px 0;
+  margin: 180px 0 35px 0;
 }
 #home .content h1 {
-  margin: 20px 50px 30px 50px;
+  margin: 20px 170px 30px 170px;
 }
 #home .content button {
   padding: 12px 29px;
-  margin: 50px 0 140px 0;
+  margin: 50px 0 130px 0;
 }
 #home .content .main-bottom {
   max-width: 1200px;
@@ -596,22 +598,28 @@ nav .logo {
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
   #home .content h1 {
-    font-size: 7.5rem;
-    margin: 0 175px 20px 175px;
+    font-size: 4.5rem;
+    margin: 0 200px 25px 200px;
   }
   #home .content h2 {
     font-size: 3.75rem;
+    margin-top: 140px;
+    margin-bottom: 20px;
+  }
+  #home .content button {
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   #home .content h1 {
-    font-size: 6.25rem;
-    margin: 0 120px 25px 120px;
+    font-size: 4.5rem;
+    margin: 0 125px 25px 125px;
   }
   #home .content h2 {
     font-size: 2.875rem;
+    margin-top: 200px;
   }
   #home .content .main-bottom .intro,
 #home .content .main-bottom .work,
@@ -627,13 +635,16 @@ nav .logo {
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+  #home {
+    font-size: 0;
+  }
   #home .content h1 {
     font-size: 4.5rem;
     margin: 0 115px 40px 115px;
   }
   #home .content h2 {
     font-size: 2.875rem;
-    margin: 140px 0 25px 0;
+    margin: 180px 0 25px 0;
   }
   #home .content button {
     margin: 40px 0 70px 0;
@@ -648,7 +659,7 @@ nav .logo {
 #home .content .main-bottom .work,
 #home .content .main-bottom .about,
 #home .content .main-bottom .contacts {
-    width: 21%;
+    width: 22%;
   }
   #home .content .main-bottom .intro div,
 #home .content .main-bottom .work div,
@@ -667,10 +678,44 @@ nav .logo {
   }
   #home .content h2 {
     font-size: 1.875rem;
-    margin: 130px 0 30px 0;
+    margin: 170px 0 25px 0;
   }
   #home .content button {
-    margin: 40px 0 80px 0;
+    margin: 40px 0 30px 0;
+    padding: 7px 15px;
+    font-size: 0.813rem;
+  }
+  #home .content .main-bottom h4,
+#home .content .main-bottom span {
+    font-size: 0.813rem;
+  }
+  #home .content .main-bottom .intro,
+#home .content .main-bottom .work,
+#home .content .main-bottom .about,
+#home .content .main-bottom .contacts {
+    width: 45%;
+  }
+  #home .content .main-bottom .intro div,
+#home .content .main-bottom .work div,
+#home .content .main-bottom .about div,
+#home .content .main-bottom .contacts div {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #home .content {
+    text-align: center;
+  }
+  #home .content h1 {
+    font-size: 3.438rem;
+    margin: 0 35px 30px 35px;
+  }
+  #home .content h2 {
+    font-size: 1.875rem;
+    margin: 120px 0 25px 0;
+  }
+  #home .content button {
+    margin: 40px 0 30px 0;
     padding: 7px 15px;
     font-size: 0.813rem;
   }
@@ -809,10 +854,6 @@ nav .logo {
   width: 100%;
   max-width: 480px;
   display: block;
-  height: 390px;
-}
-#works .works-images .images-block .image img[alt="3"] {
-  height: 780px;
 }
 #works .works-images .images-block .image .overlay {
   position: absolute;
@@ -829,7 +870,11 @@ nav .logo {
 }
 #works .works-images .images-block .image .overlay .text {
   text-align: center;
-  padding-top: 130px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  bottom: 0;
+  right: 20%;
 }
 #works .works-images .images-block .image .overlay .text h6 {
   color: #ffffff;
@@ -856,26 +901,27 @@ nav .logo {
 @media only screen and (max-width: 1199px) {
   #works .works-images .images-block {
     display: block;
-    width: 45%;
+    width: 40%;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 992px) {
   #works .works-images .images-block {
     display: block;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 600px) {
   #works .works-images .images-block {
     display: block;
-    width: 100%;
+    width: 75%;
     margin: 0 auto;
   }
 }
 .review-section-two .review-items {
   margin: 0 20px;
+  position: relative;
 }
 .review-section-two .review-items .review-item-icon,
 .review-section-two .review-items .review-item-text,
@@ -883,26 +929,33 @@ nav .logo {
   display: inline-block;
   vertical-align: middle;
 }
-.review-section-two .review-items .review-item-icon {
-  width: 4%;
-}
 .review-section-two .review-items .review-item-icon img {
   width: 100%;
   max-width: 15px;
   height: auto;
 }
-.review-section-two .review-items .review-item-icon:last-child {
-  text-align: right;
+.review-section-two .review-items .review-item-icon img[alt=right-arrow] {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+}
+.review-section-two .review-items .review-item-icon img[alt=left-arrow] {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
 }
 .review-section-two .review-items .review-item-picture {
   width: 20%;
+  padding: 0 30px 0 50px;
 }
 .review-section-two .review-items .review-item-picture img {
   width: 100%;
   max-width: 210px;
 }
 .review-section-two .review-items .review-item-text {
-  width: 70%;
+  width: 65%;
 }
 .review-section-two .review-items .review-item-text p {
   margin-bottom: 15px;
@@ -961,7 +1014,7 @@ nav .logo {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .review-section-two .review-items .review-item-text {
-    width: 60%;
+    width: 65%;
   }
   .client-section .client-reviews .client-row .client {
     display: block;
@@ -978,8 +1031,7 @@ nav .logo {
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .review-section-two .review-items .review-item-text {
-    width: 60%;
-    padding: 0 40px;
+    width: 65%;
   }
   .review-section-two .review-items .review-item-text p,
 .review-section-two .review-items .review-item-text h4 {
@@ -1000,8 +1052,7 @@ nav .logo {
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .review-section-two .review-items .review-item-text {
-    width: 55%;
-    padding: 0 35px;
+    width: 60%;
   }
   .review-section-two .review-items .review-item-text p,
 .review-section-two .review-items .review-item-text h4 {
@@ -1033,6 +1084,9 @@ nav .logo {
   }
 }
 @media only screen and (max-width: 600px) {
+  .review-section-two .review-items {
+    position: relative;
+  }
   .review-section-two .review-items .review-item-text {
     width: 70%;
     padding: 0;
@@ -1054,8 +1108,19 @@ nav .logo {
     width: 20%;
   }
   .review-section-two .review-items .review-item-icon {
-    display: block;
-    margin: 0 auto;
+    vertical-align: top;
+  }
+  .review-section-two .review-items .review-item-icon img[alt=right-arrow] {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+  }
+  .review-section-two .review-items .review-item-icon img[alt=left-arrow] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 50%;
   }
   .client-section .client-reviews .client-row .client {
     display: block;
@@ -1112,6 +1177,7 @@ nav .logo {
   width: 40%;
   vertical-align: top;
   padding-right: 15px;
+  padding-left: 15px;
 }
 #contacts .contacts .follow-part {
   margin-top: 40px;
@@ -1197,7 +1263,7 @@ nav .logo {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #contacts .contacts {
-    padding-right: 20px;
+    padding-right: 10px;
   }
   #contacts .contacts .form input[type=email] {
     padding: 15px;
@@ -1273,7 +1339,7 @@ nav .logo {
     display: block;
     margin: 0 auto;
     padding-right: 0;
-    width: 90%;
+    width: 95%;
   }
   #contacts .contacts .form {
     margin-bottom: 50px;
@@ -1409,14 +1475,11 @@ nav .logo {
   overflow: auto;
   height: 140px;
 }
-.what-we-do .activity-section .activity-item:nth-child(2) .activity-text {
-  width: 90%;
-  padding-right: 11px;
-}
 .what-we-do .activity-section .activity-item:nth-child(2)::-webkit-scrollbar {
   width: 5px;
 }
 .what-we-do .activity-section .activity-item:nth-child(2)::-webkit-scrollbar-thumb {
+  scroll-padding-right: 15px;
   background-color: #95e1d3;
 }
 .what-we-do .activity-section .activity-item:nth-child(2)::-webkit-scrollbar-thumb:hover {
@@ -1439,6 +1502,8 @@ nav .logo {
 }
 .reviews-section-one .review-items {
   padding: 70px 20px;
+  margin: 0 20px;
+  position: relative;
 }
 .reviews-section-one .review-items .review-item-icon,
 .reviews-section-one .review-items .review-item-text,
@@ -1446,16 +1511,22 @@ nav .logo {
   display: inline-block;
   vertical-align: middle;
 }
-.reviews-section-one .review-items .review-item-icon {
-  width: 3%;
-}
 .reviews-section-one .review-items .review-item-icon img {
   width: 100%;
   max-width: 15px;
   height: auto;
 }
-.reviews-section-one .review-items .review-item-icon:last-child {
-  text-align: right;
+.reviews-section-one .review-items .review-item-icon img[alt=right-arrow] {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+}
+.reviews-section-one .review-items .review-item-icon img[alt=left-arrow] {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
 }
 .reviews-section-one .review-items .review-item-picture {
   width: 13%;
@@ -1481,21 +1552,32 @@ nav .logo {
   display: inline-block;
 }
 
-.team .team-row .team-member {
+.team {
+  font-size: 0;
+}
+.team .team-row .team-item {
   display: inline-block;
   width: 31%;
-  padding-right: 15px;
-  position: relative;
+  margin-right: 15px;
 }
-.team .team-row .team-member img {
-  width: 100%;
-  max-width: 380px;
-  margin: 0 7px;
-}
-.team .team-row .team-member h6 {
+.team .team-row .team-item h6 {
   margin: 30px 0 15px 0;
 }
-.team .team-row .team-member .overlay {
+.team .team-row .team-item .team-inner {
+  position: relative;
+  background: #95e1d3;
+  width: 100%;
+  max-width: 380px;
+  margin-right: 15px;
+}
+.team .team-row .team-item .team-inner .team-member {
+  position: relative;
+}
+.team .team-row .team-item .team-inner .team-member img {
+  width: 100%;
+  max-width: 380px;
+}
+.team .team-row .team-item .team-inner .team-member .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1504,31 +1586,45 @@ nav .logo {
   opacity: 0;
   transition: 0.5s ease;
   background-image: linear-gradient(to bottom right, #f38181, #e9d182);
-  margin: 0 7px;
 }
-.team .team-row .team-member:hover .overlay {
+.team .team-row .team-item .team-inner .team-member:hover .overlay {
   opacity: 0.9;
 }
-.team .team-row .text {
-  vertical-align: middle;
+.team .team-row .team-item .team-inner .text {
+  width: 100%;
   font-size: 0;
-  padding-top: 220px;
+  position: absolute;
+  top: 45%;
+  bottom: 0;
 }
-.team .team-row .text img {
+.team .team-row .team-item .team-inner .text img {
   width: 100%;
   max-width: 15px;
   height: 15px;
   padding: 15px;
   margin: 0;
-  background-color: #fce38a;
-  border-right: #f9bd87 1px solid;
 }
-.team .team-row .text img:first-child {
+.team .team-row .team-item .team-inner .text .social-item {
+  background-color: #fce38a;
+  border-right: 1px solid #f38181;
+  font-size: 30px;
+  text-decoration: none;
+  color: #f38181;
+  line-height: 1;
+  transition: background 0.1s linear, color 0.1s linear;
+}
+.team .team-row .team-item .team-inner .text .social-item:last-child {
+  border-right: 0;
+}
+.team .team-row .team-item .team-inner .text .social-item:hover {
   background-color: #f38181;
-  height: 18px;
-  width: 100%;
-  max-width: 12px;
-  padding-top: 12px;
+  color: #fff;
+}
+.team .team-row .team-item .team-inner:hover .team-member {
+  transform: translate3d(-10px, -10px, 0);
+}
+.team .team-row .team-item .team-inner:hover .team-member img {
+  opacity: 1;
 }
 
 .logos {
@@ -1581,25 +1677,11 @@ nav .logo {
     margin-bottom: 10px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
-    width: 85%;
+    width: 80%;
     padding-right: 30px;
   }
   .reviews-section-one .review-items .review-item-text {
-    width: 60%;
-  }
-  .team .team-row .team-member {
-    display: block;
-    width: 32%;
-    margin: 0 auto;
-  }
-  .team .team-row .team-member img {
-    width: 100%;
-  }
-  .team .team-row .team-member h6 {
-    margin: 30px 0 15px 0;
-  }
-  .team .team-row .team-member p {
-    margin-bottom: 30px;
+    width: 65%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -1667,19 +1749,24 @@ nav .logo {
     margin-bottom: 10px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
-    width: 78%;
+    width: 90%;
     padding-right: 35px;
   }
   .reviews-section-one .review-items .review-item-text {
-    width: 60%;
+    width: 65%;
     padding: 0 40px;
   }
   .reviews-section-one .review-items .review-item-text p,
 .reviews-section-one .review-items .review-item-text h4 {
     font-size: 1.125rem;
   }
-  .team .team-row .team-member {
-    width: 50%;
+  .team .team-row .team-item {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .team .team-row .team-item p {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -1704,7 +1791,7 @@ nav .logo {
   }
   .what-we-do .activity-section .picture {
     display: block;
-    width: 50%;
+    width: 60%;
     padding: 0;
     margin: 0 auto;
   }
@@ -1714,7 +1801,7 @@ nav .logo {
   }
   .what-we-do .activity-section .activity {
     display: block;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     padding: 0;
   }
@@ -1726,7 +1813,7 @@ nav .logo {
     display: inline-block;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text {
-    width: 75%;
+    width: 77%;
     padding: 0 0 0 10px;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text h6 {
@@ -1741,19 +1828,22 @@ nav .logo {
     padding-right: 7px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
-    width: 75%;
+    width: 85%;
     padding-right: 30px;
   }
   .reviews-section-one .review-items .review-item-text {
-    width: 55%;
+    width: 60%;
     padding: 0 35px;
   }
   .reviews-section-one .review-items .review-item-text p,
 .reviews-section-one .review-items .review-item-text h4 {
     font-size: 0.938rem;
   }
-  .team .team-row .team-member {
+  .team .team-row .team-item {
     width: 50%;
+  }
+  .team .team-row .team-item p {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1780,7 +1870,7 @@ nav .logo {
   }
   .what-we-do .activity-section .picture {
     display: block;
-    width: 80%;
+    width: 75%;
     padding: 0;
     margin: 0 auto;
   }
@@ -1790,7 +1880,7 @@ nav .logo {
   }
   .what-we-do .activity-section .activity {
     display: block;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding: 0;
   }
@@ -1802,7 +1892,7 @@ nav .logo {
     display: inline-block;
   }
   .what-we-do .activity-section .activity .activity-item .activity-text {
-    width: 68%;
+    width: 70%;
     vertical-align: middle;
     padding: 0 20px 0 10px;
   }
@@ -1815,14 +1905,15 @@ nav .logo {
     width: 50%;
   }
   .what-we-do .activity-section .activity .activity-item .activity-icon {
-    padding-right: 10px;
+    padding-right: 5px;
   }
   .what-we-do .activity-section .activity .activity-item:nth-child(2) .activity-text {
-    width: 78%;
+    width: 85%;
     padding-right: 20px;
   }
   .reviews-section-one .review-items {
-    padding-right: 0;
+    position: relative;
+    margin: 0 20px;
   }
   .reviews-section-one .review-items .review-item-text {
     width: 70%;
@@ -1844,9 +1935,17 @@ nav .logo {
     padding: 20px 0;
     width: 20%;
   }
-  .reviews-section-one .review-items .review-item-icon {
-    display: block;
-    margin: 0 auto;
+  .reviews-section-one .review-items .review-item-icon img[alt=right-arrow] {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+  }
+  .reviews-section-one .review-items .review-item-icon img[alt=left-arrow] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 50%;
   }
   .devices {
     /* Devices */
@@ -1881,20 +1980,39 @@ nav .logo {
     bottom: -50px;
     right: -80px;
   }
-  .team .team-row .team-member {
-    width: 70%;
+  .team .team-row .team-item {
+    width: 60%;
+  }
+  .team .team-row .team-item p {
+    margin-bottom: 30px;
   }
 }
 #about {
   background-color: #ffffff;
   margin: 90px 0 110px 0;
 }
+#about .image-row .image-item {
+  display: inline-block;
+}
+#about .image-row .image-item .image-inner {
+  position: relative;
+  background: #95e1d3;
+  width: 100%;
+  max-width: 375px;
+  height: 250px;
+  margin-right: 22px;
+}
+#about .image-row .image-item .image-inner:hover .image {
+  transform: translate3d(-10px, -10px, 0);
+}
+#about .image-row .image-item .image-inner:hover .image img {
+  opacity: 1;
+}
 #about .image-row .image {
   display: inline-block;
   position: relative;
 }
 #about .image-row .image img {
-  margin: 0 7px;
   width: 100%;
   max-width: 380px;
   height: 250px;
@@ -1911,7 +2029,6 @@ nav .logo {
   opacity: 0;
   transition: 0.5s ease;
   background-image: linear-gradient(to bottom right, #f38181, #e9d182);
-  margin: 0 7px;
 }
 #about .image-row .image:hover .overlay {
   opacity: 0.9;
@@ -1953,14 +2070,14 @@ nav .logo {
 }
 
 @media only screen and (max-width: 1199px) {
-  #about .image-row .image {
+  #about .image-row .image-item {
     display: block;
     margin: 0 auto;
     width: 90%;
     max-width: 380px;
     padding-bottom: 20px;
   }
-  #about .image-row .image .overlay {
+  #about .image-row .image-item .overlay {
     height: 250px;
   }
 }

@@ -1,13 +1,13 @@
 // headings
 
 h1 {
-  font-size: $extralarge;
+  font-size: $font-xl;
   font-family: $montserrat;
   font-weight: bold;
 }
 
 h2 {
-  font-size: $large;
+  font-size: $font-lg;
 }
 
 h3 {
@@ -118,6 +118,7 @@ h6 {
 
     h2 {
       font-weight: bold;
+      font-size: $large;
     }
   }
 }
@@ -195,7 +196,7 @@ h6 {
   .team-row {
     text-align: center;
 
-    .team-member {
+    .team-item {
 
       h6 {
         font-family: $montserrat;
@@ -205,6 +206,7 @@ h6 {
         color: $textgrey;
         font-style: italic;
         font-family: $roboto;
+        font-size: $small;
       }
     }
   }

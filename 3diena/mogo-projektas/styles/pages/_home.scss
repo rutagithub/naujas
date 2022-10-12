@@ -15,16 +15,16 @@
     box-sizing: border-box;
 
     h2 {
-      margin: 150px 0 35px 0;
+      margin: 180px 0 35px 0;
     }
 
     h1 {
-      margin: 20px 50px 30px 50px;
+      margin: 20px 170px 30px 170px;
     }
 
     button {
       padding: 12px 29px;
-      margin: 50px 0 140px 0;
+      margin: 50px 0 130px 0;
     }
 
     // home section content bottom part
@@ -60,16 +60,22 @@
 
 // for screens less than 1200px and more than 992px
 
-@media only screen and (min-width: $large-breakpoint) and (max-width: $extra-large-breakpoint) {
+@media only screen and (max-width: $extra-large-breakpoint) {
   #home {
     .content {
       h1 {
-        font-size: $xxlg;
-        margin: 0 175px 20px 175px;
+        font-size: $large;
+        margin: 0 200px 25px 200px;
       }
 
       h2 {
         font-size: $mlg;
+        margin-top: 140px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-top: 30px;
       }
     }
   }
@@ -81,12 +87,13 @@
   #home {
     .content {
       h1 {
-        font-size: $xlg;
-        margin: 0 120px 25px 120px;
+        font-size: $large;
+        margin: 0 125px 25px 125px;
       }
 
       h2 {
         font-size: $ml;
+        margin-top: 200px;
       }
 
       .main-bottom {
@@ -110,6 +117,7 @@
 
 @media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
   #home {
+    font-size: 0;
 
     .content {
       h1 {
@@ -119,7 +127,7 @@
 
       h2 {
         font-size: $ml;
-        margin: 140px 0 25px 0;
+        margin: 180px 0 25px 0;
       }
 
       button {
@@ -139,7 +147,7 @@
         .work,
         .about,
         .contacts {
-          width: 21%;
+          width: 22%;
 
           div {
             margin-bottom: 10px;
@@ -165,11 +173,57 @@
 
       h2 {
         font-size: $medium;
-        margin: 130px 0 30px 0;
+        margin: 170px 0 25px 0;
       }
 
       button {
-        margin: 40px 0 80px 0;
+        margin: 40px 0 30px 0;
+        padding: 7px 15px;
+        font-size: $ssmallest;
+      }
+
+      .main-bottom {
+
+        h4,
+        span {
+          font-size: $ssmallest;
+        }
+
+        .intro,
+        .work,
+        .about,
+        .contacts {
+          width: 45%;
+
+          div {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// for screens less than 480px
+@media only screen and (max-width: $smallest-breakpoint) {
+
+  #home {
+
+    .content {
+      text-align: center;
+
+      h1 {
+        font-size: $emlg;
+        margin: 0 35px 30px 35px;
+      }
+
+      h2 {
+        font-size: $medium;
+        margin: 120px 0 25px 0;
+      }
+
+      button {
+        margin: 40px 0 30px 0;
         padding: 7px 15px;
         font-size: $ssmallest;
       }

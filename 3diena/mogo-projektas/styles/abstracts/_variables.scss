@@ -16,17 +16,8 @@ $small: 0.938rem;
 $extrasmall: 0.875rem;
 $ssmallest: 0.813rem;
 $smallest: 0.75rem;
-
-// $extralarge: 150px;
-// $large: 72px;
-// $ml: 46px;
-// $medium: 30px;
-// $smaller: 24px;
-// $ssmaller: 18px;
-// $small: 15px;
-// $extrasmall: 14px;
-// $ssmallest: 13px;
-// $smallest: 12px;
+$font-xl: calc(7.2rem + 0.2vw);
+$font-lg: calc(3rem + 0.2vw);
 
 // fonts sizes for breakpoints
 
@@ -36,16 +27,11 @@ $mlg: 3.75rem;
 $emlg: 3.438rem;
 $xxs: 0.625rem;
 
-// $xxlg: 120px;
-// $xlg: 100px;
-// $mlg: 60px;
-// $emlg: 55px;
-// $xxs: 10px;
-
 // colors
 
 $textyellow: #fce38a;
 $lightyellow: #f7ebc5;
+$yelloworange: #e9d182;
 $textwhite: #ffffff;
 $salmon: #f38181;
 $lightgrey: #e5e5e5;
@@ -62,3 +48,4 @@ $extra-large-breakpoint: 1199px;
 $large-breakpoint: 992px;
 $medium-breakpoint: 768px;
 $small-breakpoint: 600px;
+$smallest-breakpoint: 480px;
