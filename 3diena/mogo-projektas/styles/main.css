@@ -1474,6 +1474,7 @@ nav .logo {
   margin-bottom: 10px;
   overflow: auto;
   height: 140px;
+  overflow-x: hidden;
 }
 .what-we-do .activity-section .activity-item:nth-child(2)::-webkit-scrollbar {
   width: 5px;
