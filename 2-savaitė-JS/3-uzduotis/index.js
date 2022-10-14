@@ -64,11 +64,10 @@ kurisGreiciausias();
 
 // 1) sukurti objekta
 // 2) sukurti objekte metodus, kuriais pasiekciau properties
-// 3) sukurti metoda, kuriuo apskaiciuotu nuvaziuota kelia per valanda(??), nors pagal logika reikia laiko, nes nuvaziuotas kelias per valanda ir yra greitis, kuri mes jau turim
-// 4) sukurti mygtuka
-// 5) ant mygtuko paspaudimo butu sukurtos 5 masinos
-// 6) sukurti html elementa
-// 7) atvaizduoti 5 masinas su visais parametrais html elemente
+// 3) sukurti mygtuka
+// 4) ant mygtuko paspaudimo butu sukurtos 5 masinos
+// 5) sukurti html elementa
+// 6) atvaizduoti 5 masinas su visais parametrais html elemente
 
 // objekto konstruktorius
 function Car(name, speed, distance) {
